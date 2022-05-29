@@ -1,3 +1,156 @@
+### Introduction to CSS
+
+![](../images/11.png)
+![](../images/12.png)
+
+### Inline, Internal and External CSS
+
+#### inline css
+
+this is not a good practice to use inline css
+
+```html
+<h2 style="color: blue">The Basic Language of the Web: HTML</h2>
+```
+
+#### internal css
+
+if the styles become too long, this can be a bad practice
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <title>The Basic Language of the Web: HTML</title>
+  <style>
+    h1 {
+      color: red;
+    }
+  </style>
+</head>
+```
+
+#### external css
+
+let's create a css file and link it to the html file
+
+styles.css
+
+```css
+h1 {
+  color: blue;
+}
+```
+
+link that css file to the html file
+
+```html
+<head>
+  <meta charset="UTF-8" />
+  <title>The Basic Language of the Web: HTML</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+```
+
+### Styling Text
+
+let's style these text
+
+```css
+h1 {
+  font-size: 26px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h4 {
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+li {
+  font-family: sans-serif;
+  font-size: 20px;
+}
+```
+
+#### output
+
+![](../images/13.png)
+
+### Combining Selectors
+
+```css
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+/* nested selectors */
+footer p {
+  font-size: 16px;
+}
+
+/* here we are encoding our html structure in to our css */
+article header p {
+  font-style: italic;
+}
+```
+
+### Class and ID Selectors
+
+let's add some classes and ids
+
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -149,3 +302,102 @@
     </footer>
   </body>
 </html>
+```
+
+let's style those classes and ids
+
+```css
+h1,
+h2,
+h3,
+h4,
+p,
+li {
+  font-family: sans-serif;
+}
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+li {
+  font-size: 20px;
+}
+/* nested selectors */
+/* footer p {
+  font-size: 16px;
+} */
+
+#copyright {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* here we are encoding our html structure in to our css */
+article header p {
+  font-style: italic;
+  font-size: 18px;
+}
+/* here is a solution to the above problem */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+```
+
+it's always better to use classes because then we are ready for the future.
+
+### Working With Colors
+
+### Pseudo-classes
+
+### Styling Hyperlinks
+
+### Using Chrome DevTools
+
+### CSS Theory #1\_ Conflicts Between Selectors ### CSS Theory #2\_ Inheritance
+
+and the Universal Selector ### CHALLENGE #1 ### CSS Theory #3\_ The CSS Box
+Model ### Using Margins and Paddings ### Adding Dimensions ### Centering our
+Page ### CHALLENGE #2 ### CSS Theory #4\_ Types of Boxes ### CSS Theory #5\_
+Absolute Positioning ### Pseudo-elements ### Developer Skill #1\_ Googling and
+Reading Documentation ### Developer Skill #2\_ Debugging and Asking Questions
+
+### CHALLENGE #3
+
+```
+
+```
+
+```
+
+```
