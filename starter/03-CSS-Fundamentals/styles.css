@@ -21,6 +21,7 @@ body {
 
 .post-header {
   margin-bottom: 40px;
+  position: relative;
 }
 aside {
   background-color: #f7f7f7;
@@ -168,4 +169,33 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+/* 
+h2::first-letter {
+  font-size: 80px;
+} */
+/* p::first-line {
+  color: red;
+} */
+/* 
+h3 + p {
+   color: red;
+} */
+
+h2::after {
+  content: 'Top';
+  background-color: #ffe70e;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  right: -20px;
+  top: -15px;
+  color: #444;
 }
