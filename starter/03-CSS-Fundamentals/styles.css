@@ -3,15 +3,20 @@
   margin: 0;
   padding: 0;
 }
+/* PAGE SECTIONS */
 body{
   color: #444;
     font-family: sans-serif;
+}
+.container{
+  width: 800px;
+  margin: 0 auto;
 }
 .main-header {
   background-color: #f7f7f7;
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  
 }
 
 .post-header{
@@ -31,6 +36,7 @@ nav {
  
   font-size: 18px;
 }
+/* SMALL SECTIONS */
 h1,h2,h3{
 color: #1098ad;
 }
@@ -140,4 +146,18 @@ a:active{
 .post-image{
   width: 100%;
   height: auto;
+}
+
+nav a:link{
+/* background-color: orangered;
+margin: 20px;
+padding: 20px;
+display: block; */
+margin-right: 20px;
+margin-top: 10px;
+display: inline-block;
+}
+
+nav a:link:last-child{
+  margin-right: 0px;
 }
