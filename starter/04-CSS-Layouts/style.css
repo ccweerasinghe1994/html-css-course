@@ -232,7 +232,7 @@ h2 {
 }
 
 h2::before {
-  content: "TOP";
+  content: 'TOP';
   background-color: #ffe70e;
   color: #444;
   font-size: 16px;
@@ -265,3 +265,22 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOATS */
+
+.author-image {
+  float: left;
+  margin-bottom: 10px;
+}
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}

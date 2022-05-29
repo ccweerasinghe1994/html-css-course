@@ -26,6 +26,41 @@
 
 ### Using Floats
 
+let's give these elements class names
+
+```html
+<img
+  class="author-image"
+  src="img/laura-jones.jpg"
+  alt="Headshot of Laura Jones"
+  height="50"
+  width="50"
+/>
+
+<p id="author" class="author">
+  Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027. lore
+</p>
+```
+
+```css
+.author-image {
+  float: left;
+  margin-bottom: 10px;
+}
+.author {
+  float: left;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+```
+
 ![](../images/36.png)
 
 ### Clearing Floats
