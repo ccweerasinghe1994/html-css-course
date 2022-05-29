@@ -671,7 +671,164 @@ output
 ![](../images/23.png)
 ![](../images/24.png)
 
-### Using Margins and Paddings ### Adding Dimensions ### Centering our
+### Using Margins and Paddings
+
+what is margin collapsing?
+when there is margin applied to the adjacent elements, the margin collapses
+bigger one gets applied.
+to avoid these stick to one bottom or top
+don't mix the margin
+
+```css
+/* universal selector */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+}
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+}
+
+.post-header {
+  margin-bottom: 40px;
+}
+aside {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+}
+article {
+  margin-bottom: 60px;
+}
+nav {
+  font-size: 18px;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+li:last-child {
+  margin-bottom: 0;
+}
+/* nested selectors */
+/* footer p {
+  font-size: 16px;
+} */
+
+#copyright {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* here we are encoding our html structure in to our css */
+article header p {
+  font-style: italic;
+  font-size: 18px;
+}
+/* here is a solution to the above problem */
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.related {
+  list-style: none;
+}
+
+/* misconception wont't work */
+article p:first-child {
+  color: red;
+}
+
+/* styling hyper links */
+
+/* these order is important */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+```
+
+### Adding Dimensions
+
+adding styles to the img tag
+
+```css
+.post-image {
+  width: 100%;
+  height: auto;
+}
+```
+
+### Centering our
 
 Page ### CHALLENGE #2 ### CSS Theory #4\_ Types of Boxes ### CSS Theory #5\_
 Absolute Positioning ### Pseudo-elements ### Developer Skill #1\_ Googling and
