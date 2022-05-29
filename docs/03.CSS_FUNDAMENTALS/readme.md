@@ -470,6 +470,24 @@ aside {
 
 ### Pseudo-classes
 
+```css
+li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(even) {
+  color: rebeccapurple;
+}
+
+article p:last-child {
+  color: red;
+}
+```
+
 ### Styling Hyperlinks
 
 ### Using Chrome DevTools
