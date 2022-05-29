@@ -490,6 +490,30 @@ article p:last-child {
 
 ### Styling Hyperlinks
 
+```css
+/* these order is important */
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+```
+
 ### Using Chrome DevTools
 
 ### CSS Theory #1\_ Conflicts Between Selectors ### CSS Theory #2\_ Inheritance
