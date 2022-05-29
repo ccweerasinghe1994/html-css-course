@@ -516,10 +516,163 @@ a:active {
 
 ### Using Chrome DevTools
 
-### CSS Theory #1\_ Conflicts Between Selectors ### CSS Theory #2\_ Inheritance
+explore the chrome devtools
 
-and the Universal Selector ### CHALLENGE #1 ### CSS Theory #3\_ The CSS Box
-Model ### Using Margins and Paddings ### Adding Dimensions ### Centering our
+### CSS Theory #1\_ Conflicts Between Selectors
+
+![](../images/17.png)
+![](../images/18.png)
+
+```css
+#copyright {
+  color: red;
+}
+.copyright {
+  color: blue;
+}
+.text {
+  color: yellow;
+}
+
+footer p {
+  color: green;
+}
+```
+
+![](../images/19.png)
+
+### CSS Theory #2\_ Inheritance
+
+![](../images/20.png)
+example:
+
+```css
+/* universal selector */
+* {
+  /* margin: 0;
+  padding: 0; */
+}
+body {
+  color: #444;
+  font-family: sans-serif;
+}
+```
+
+and the Universal Selector
+
+### CHALLENGE #1
+
+```html
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Side Project</title>
+  </head>
+  <body>
+    <article class="product">
+      <header>
+        <h1 class="product-title">Converse Chuck Taylor All Star Low Top</h1>
+        <img
+          src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80"
+          height="400"
+          alt=""
+        />
+      </header>
+      <p class="price"><strong>$ 65.00</strong></p>
+      <p class="shipping">Freen Shipping</p>
+      <p>
+        Ready to dress up or down. these classic canvas chuks are an every day
+        staple
+      </p>
+      <a class="more-info" href="#">More Information &rarr;</a>
+      <h2 class="details-title">Product Details</h2>
+      <ul class="details-list">
+        <li>Lightweight, durable canvas sneaker</li>
+        <li>Lightyt padded footbed for added comfort</li>
+        <li>Iconic chuck taylor ankle patch</li>
+      </ul>
+      <button class="add-cart">Add to cart</button>
+    </article>
+  </body>
+</html>
+```
+
+```css
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+/* PRODUCT */
+.product {
+  border: 5px solid black;
+}
+
+.product-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-color: #f7f7f7;
+}
+/* PRODUCT INFORMATION */
+.price {
+  font-size: 24px;
+}
+.shipping {
+  color: #777;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a:link,
+a:visited {
+  color: #222;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+.more-info:active {
+  color: #222;
+}
+/* PRODUCT DETAILS */
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.details-list {
+  list-style: square;
+}
+.add-cart {
+  background: #000;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: none;
+}
+
+.add-cart:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+```
+
+output
+
+![](../images/21.png)
+
+### CSS Theory #3\_ The CSS Box Model
+
+![](../images/22.png)
+![](../images/23.png)
+![](../images/24.png)
+
+### Using Margins and Paddings ### Adding Dimensions ### Centering our
+
 Page ### CHALLENGE #2 ### CSS Theory #4\_ Types of Boxes ### CSS Theory #5\_
 Absolute Positioning ### Pseudo-elements ### Developer Skill #1\_ Googling and
 Reading Documentation ### Developer Skill #2\_ Debugging and Asking Questions
