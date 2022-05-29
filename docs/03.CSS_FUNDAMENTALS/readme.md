@@ -1008,6 +1008,30 @@ nav a:link:last-child {
 
 ### CSS Theory #5_Absolute Positioning
 
+![](../images/30.png)
+![](../images/31.png)
+
+```css
+body {
+  color: #444;
+  font-family: sans-serif;
+  position: relative;
+}
+
+button {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
+```
+
+output
+
+![](../images/32.png)
+
 ### Pseudo-elements
 
 ### Developer Skill #1\_ Googling and Reading Documentation
