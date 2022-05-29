@@ -6,7 +6,6 @@
 - [Hyperlinks](#hyperlinks)
 - [Structuring our Page](#structuring-our-page)
 - [A Note on Semantic HTML](#a-note-on-semantic-html)
-- [Installing Additional VS Code Extensions](#installing-additional-vs-code-extensions)
 - [CHALLENGE #1](#challenge-1)
 - [CHALLENGE #2](#challenge-2)
 
@@ -240,6 +239,8 @@ adding first programme structure
 
 using **article,header,nav,footer**
 
+---
+
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -338,8 +339,53 @@ using **article,header,nav,footer**
 
 ### A Note on Semantic HTML
 
-### Installing Additional VS Code Extensions
+importance of semantic html
+
+- better SEO
+- accessibility
 
 ### CHALLENGE #1
+
+```html
+<aside>
+  <h2>Relates posts</h2>
+  <ul>
+    <li>
+      <img
+        src="./images/related-1.jpg"
+        width="75"
+        height="75"
+        alt="man typing on a laptop"
+      />
+      <a href="#">How to learn web development</a>
+      <p>By Chamara Weerasinghe</p>
+    </li>
+    <li>
+      <img
+        src="./images/related-2.jpg"
+        width="75"
+        he
+        alt="man typing on a laptop"
+      />
+      <a href="#">How to learn web development</a>
+      <p>By Shan Dinesh</p>
+    </li>
+    <li>
+      <img
+        src="./images/related-3.jpg"
+        width="75"
+        he
+        alt="man typing on a laptop"
+      />
+      <a href="#">How to learn web development</a>
+      <p>By Gagani Dharika</p>
+    </li>
+  </ul>
+</aside>
+```
+
+output
+
+![](../images/9.png)
 
 ### CHALLENGE #2
