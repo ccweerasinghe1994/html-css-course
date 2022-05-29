@@ -42,6 +42,8 @@ let's give these elements class names
 </p>
 ```
 
+styles
+
 ```css
 .author-image {
   float: left;
@@ -61,9 +63,42 @@ nav {
 }
 ```
 
+output
+
+![](../images/105.png)
+
 ![](../images/36.png)
 
 ### Clearing Floats
+
+```html
+<div class="container">
+  <header class="main-header clearfix">
+    <h1>📘 The Code Magazine</h1>
+
+    <nav>
+      <!-- <strong>This is the navigation</strong> -->
+      <a href="blog.html">Blog</a>
+      <a href="#">Challenges</a>
+      <a href="#">Flexbox</a>
+      <a href="#">CSS Grid</a>
+    </nav>
+    <!-- <div class="clear"></div> -->
+  </header>
+</div>
+```
+
+```css
+.clearfix::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+```
+
+output
+
+![](../images/106.png)
 
 ### Building a Simple Float Layout
 
