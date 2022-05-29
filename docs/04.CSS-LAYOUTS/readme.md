@@ -102,6 +102,33 @@ output
 
 ### Building a Simple Float Layout
 
+let's change the width of the container
+
+```css
+.container {
+  width: 1200px;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin: 0 auto;
+}
+
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
+}
+```
+
+output
+
+![](../images/107.png)
+
 ### box-sizing\_ border-box
 
 ### CHALLENGE #1
