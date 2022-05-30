@@ -499,6 +499,30 @@ output
 
 ### The flex Property
 
+```css
+.el {
+  /* DEFAULTS */
+  /* flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 1; */
+
+  /* flex-basis: 500px; */
+  /* flex-shrink: 0;
+        flex-grow: 1; */
+  flex: 1;
+}
+
+.el--1 {
+  align-self: flex-start;
+  /* order: 2; */
+  flex-grow: 3;
+}
+```
+
+output
+
+![](../images/112.png)
+
 ### Adding Flexbox to Our Project
 
 ### Building a Simple Flexbox Layout
