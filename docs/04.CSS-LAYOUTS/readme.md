@@ -694,7 +694,106 @@ output
 
 ### Introduction to CSS Grid
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Grid</title>
+    <style>
+      .el--1 {
+        background-color: blueviolet;
+      }
+      .el--2 {
+        background-color: orangered;
+      }
+      .el--3 {
+        background-color: green;
+        height: 150px;
+      }
+      .el--4 {
+        background-color: goldenrod;
+      }
+      .el--5 {
+        background-color: palevioletred;
+      }
+      .el--6 {
+        background-color: steelblue;
+      }
+      .el--7 {
+        background-color: yellow;
+      }
+      .el--8 {
+        background-color: crimson;
+      }
+
+      .container--1 {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: #ddd;
+        font-size: 32px;
+        margin: 40px;
+
+        /* CSS GRID */
+        display: grid;
+        grid-template-columns: 250px 150px 200px 150px;
+        grid-template-rows: 300px 100px;
+        /* gap: 30px; */
+        row-gap: 60px;
+        column-gap: 30px;
+      }
+
+      .container--2 {
+        /* STARTER */
+        font-family: sans-serif;
+        background-color: black;
+        font-size: 40px;
+        margin: 100px;
+
+        width: 1000px;
+        height: 600px;
+
+        /* CSS GRID */
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container--1">
+      <div class="el el--1">(1) HTML</div>
+      <div class="el el--2">(2) and</div>
+      <div class="el el--3">(3) CSS</div>
+      <div class="el el--4">(4) are</div>
+      <div class="el el--5">(5) amazing</div>
+      <div class="el el--6">(6) languages</div>
+      <div class="el el--7">(7) to</div>
+      <div class="el el--8">(8) learn</div>
+    </div>
+
+    <div class="container--2">
+      <div class="el el--1">(1)</div>
+      <div class="el el--3">(3)</div>
+      <div class="el el--4">(4)</div>
+      <div class="el el--5">(5)</div>
+      <div class="el el--6">(6)</div>
+      <div class="el el--7">(7)</div>
+    </div>
+  </body>
+</html>
+```
+
+output
+
+![](../images/117.png)
+
 ### A CSS Grid Overview
+
+![](../images/41.png)
+![](../images/42.png)
+![](../images/43.png)
+![](../images/44.png)
 
 ### Sizing Grid Columns and Rows
 
