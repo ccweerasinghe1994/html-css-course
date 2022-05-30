@@ -822,7 +822,80 @@ output
 
 ### Placing and Spanning Grid Items
 
+```css
+.container--1 {
+  /* STARTER */
+  font-family: sans-serif;
+  background-color: #ddd;
+  font-size: 32px;
+  margin: 40px;
+
+  /* CSS GRID */
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr auto; */
+  /* grid-template-rows: 300px 100px; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+
+  /* gap: 30px; */
+  row-gap: 60px;
+  column-gap: 30px;
+}
+
+.el--8 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.el--2 {
+  /* grid-column: 1/3; */
+  grid-column: 1 / -1;
+  grid-row: 2;
+}
+```
+
+output
+
+![](../images/119.png)
+
 ### Aligning Grid Items and Tracks
+
+```css
+.container--2 {
+  /* STARTER */
+  font-family: sans-serif;
+  background-color: black;
+  font-size: 40px;
+  margin: 100px;
+
+  width: 1000px;
+  height: 600px;
+
+  /* CSS GRID */
+  display: grid;
+  grid-template-columns: 125px 200px 125px;
+  grid-template-rows: 250px 100px;
+  gap: 50px;
+  /* aligning the grid tracks */
+  justify-content: center;
+  align-content: center;
+
+  /* Aligning items inside the cells */
+  justify-items: center;
+  align-items: center;
+}
+```
+
+![](../images/120.png)
+
+```css
+.el--1 {
+  align-self: flex-end;
+  justify-self: end;
+}
+```
+
+![](../images/121.png)
 
 ### Building a Simple CSS Grid Layout
 
