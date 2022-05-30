@@ -465,6 +465,38 @@ output
 
 ### Spacing and Aligning Flex Items
 
+```css
+.container {
+  /* STARTER */
+  font-family: sans-serif;
+  background-color: #ddd;
+  font-size: 34px;
+  margin: 40px;
+
+  /* FLEXBOX */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.el--1 {
+  align-self: flex-start;
+  /* order: 2; */
+}
+.el--4 {
+  align-self: stretch;
+  order: 1;
+}
+.el--6 {
+  order: -1;
+}
+```
+
+output
+
+![](../images/111.png)
+
 ### The flex Property
 
 ### Adding Flexbox to Our Project

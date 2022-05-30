@@ -42,7 +42,20 @@
         /* FLEXBOX */
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: flex-start;
+        gap: 10px;
+      }
+
+      .el--1 {
+        align-self: flex-start;
+        /* order: 2; */
+      }
+      .el--4 {
+        align-self: stretch;
+        order: 1;
+      }
+      .el--6 {
+        order: -1;
       }
     </style>
   </head>
