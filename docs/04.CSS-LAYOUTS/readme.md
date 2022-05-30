@@ -574,7 +574,123 @@ output
 
 ### Building a Simple Flexbox Layout
 
+```html
+<div class="row">article ... aside ....</div>
+```
+
+```css
+.row {
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+article {
+  flex: 1;
+  margin-bottom: 0;
+}
+aside {
+  flex: 0 0 300px;
+}
+```
+
+output
+
+![](../images/115.png)
+
 ### CHALLENGE #2
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <article class="product">
+      <h2 class="product-title">Converse Chuck Taylor All Star Low Top</h2>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80"
+          alt="Chuck Taylor All Star Shoe"
+          height="250"
+          width="250"
+          class="product-img"
+        />
+        <div class="product-info">
+          <div class="price-box">
+            <p class="price"><strong>$65.00</strong></p>
+            <p class="shipping">Free shipping</p>
+          </div>
+          <p class="sale">Sale</p>
+
+          <p class="product-description">
+            Ready to dress up or down, these classic canvas Chucks are an
+            everyday wardrobe staple.
+          </p>
+          <a href="https://converse.com" target="_blank" class="more-info"
+            >More information &rarr;</a
+          >
+
+          <div class="colors">
+            <div class="color"></div>
+            <div class="color color-blue"></div>
+            <div class="color color-red"></div>
+            <div class="color color-yellow"></div>
+            <div class="color color-green"></div>
+            <div class="color color-brown"></div>
+          </div>
+        </div>
+
+        <div class="product-details">
+          <h3 class="details-title">Product details</h3>
+          <ul class="details-list">
+            <li>Lightweight, durable canvas sneaker</li>
+            <li>Lightly padded footbed for added comfort</li>
+            <li>Iconic Chuck Taylor ankle patch.</li>
+          </ul>
+        </div>
+      </div>
+      <button class="add-cart">Add to cart</button>
+    </article>
+  </body>
+</html>
+```
+
+```css
+.container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  gap: 60px;
+  padding: 20px;
+  /*   background-color: red; */
+}
+.product-img {
+  margin-right: 0;
+}
+.product-info {
+  margin-right: 0;
+  margin-top: 0;
+  align-self: flex-start;
+}
+.product-details {
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+}
+```
+
+![](../images/116.png)
 
 ### Introduction to CSS Grid
 
