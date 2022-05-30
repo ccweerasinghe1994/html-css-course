@@ -925,3 +925,30 @@ footer {
 ![](../images/122.png)
 
 ### CHALLENGE #3
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+}
+.product-img {
+  margin-right: 0;
+}
+.product-info {
+  margin-right: 0;
+  margin-top: 0;
+  align-self: flex-start;
+}
+.product-details {
+  margin-top: 0;
+  align-self: flex-start;
+}
+
+.price-box {
+  display: flex;
+  justify-content: space-between;
+}
+```
+
+![](../images/123.png)
