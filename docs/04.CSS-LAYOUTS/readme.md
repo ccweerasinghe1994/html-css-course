@@ -797,6 +797,29 @@ output
 
 ### Sizing Grid Columns and Rows
 
+```css
+.container--1 {
+  /* STARTER */
+  font-family: sans-serif;
+  background-color: #ddd;
+  font-size: 32px;
+  margin: 40px;
+
+  /* CSS GRID */
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr auto; */
+  /* grid-template-rows: 300px 100px; */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr auto;
+  height: 500px;
+  /* gap: 30px; */
+  row-gap: 60px;
+  column-gap: 30px;
+}
+```
+
+![](../images/118.png)
+
 ### Placing and Spanning Grid Items
 
 ### Aligning Grid Items and Tracks
