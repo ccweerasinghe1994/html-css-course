@@ -899,4 +899,29 @@ output
 
 ### Building a Simple CSS Grid Layout
 
+```css
+.container {
+  display: grid;
+  column-gap: 75px;
+  row-gap: 60px;
+  grid-template-columns: 1fr 300px;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+article {
+  grid-column: 1 / 2;
+}
+aside {
+  grid-column: 2 / -1;
+  align-self: start;
+}
+footer {
+  grid-column: 1 / -1;
+}
+```
+
+![](../images/122.png)
+
 ### CHALLENGE #3
