@@ -2,6 +2,7 @@
   - [ 1️⃣ well come and first steps](#-1️⃣-well-come-and-first-steps)
   - [ 🔥 HTML fundamentals](#--html-fundamentals)
   - [ 🎆 CSS fundamentals](#--css-fundamentals)
+  - [🌵 css layouts](#-css-layouts)
 
 # HTML AND CSS COURSE
 
@@ -10,3 +11,5 @@
 ## [ 🔥 HTML fundamentals](./docs/02.HTML-Fundamentals/readme.md)
 
 ## [ 🎆 CSS fundamentals](./docs/03.CSS_FUNDAMENTALS/readme.md)
+
+## [🌵 css layouts](docs/04.CSS-LAYOUTS/readme.md)
