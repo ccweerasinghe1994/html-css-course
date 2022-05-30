@@ -525,6 +525,53 @@ output
 
 ### Adding Flexbox to Our Project
 
+```css
+/* FLEX BOX */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.author {
+  margin-bottom: 0;
+}
+.related-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.related li {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.related-author {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.related-box a:link {
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+}
+```
+
+output
+
+![](../images/113.png)
+![](../images/114.png)
+
 ### Building a Simple Flexbox Layout
 
 ### CHALLENGE #2
