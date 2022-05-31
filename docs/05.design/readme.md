@@ -400,12 +400,99 @@ footer {
 ![](../images/78.png)
 ![](../images/79.png)
 ![](../images/80.png)
+![](../images/81.png)
+![](../images/82.png)
+![](../images/83.png)
 
 ### Implementing Colors
 
+```css
+body {
+  font-family: 'Inter', sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #099268;
+}
+
+.btn:link,
+btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+}
+
+.btn:hover,
+btn:active {
+  background-color: #099268;
+}
+
+.btn--big {
+  font-size: 18px;
+  padding: 16px 32px;
+}
+.btn--small {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+/* TESTIMONIAL */
+.testimonial-section {
+  background-color: #087f5b;
+  padding: 24px;
+  color: #fff;
+}
+
+footer {
+  margin-bottom: 48px;
+  font-size: 14px;
+  color: #495057;
+}
+```
+
+**output**
+![](../images/127.png)
+![](../images/128.png)
+![](../images/129.png)
+
 ### Web Design Rules #3\_ Images and Illustrations
 
+![](../images/84.png)
+![](../images/85.png)
+![](../images/86.png)
+![](../images/87.png)
+![](../images/88.png)
+![](../images/89.png)
+![](../images/90.png)
+![](../images/91.png)
+![](../images/92.png)
+![](../images/93.png)
+![](../images/94.png)
+![](../images/95.png)
+![](../images/96.png)
+![](../images/97.png)
+![](../images/98.png)
+![](../images/99.png)
+![](../images/100.png)
+![](../images/101.png)
+![](../images/102.png)
+![](../images/103.png)
+![](../images/104.png)
+
 ### Web Design Rules #4\_ Icons
+
+![](../images/130.png)
+![](../images/131.png)
+![](../images/132.png)
+![](../images/133.png)
+![](../images/134.png)
+![](../images/135.png)
+![](../images/136.png)
+![](../images/137.png)
+![](../images/138.png)
+![](../images/139.png)
+![](../images/140.png)
 
 ### Implementing Icons
 
