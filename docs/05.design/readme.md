@@ -917,6 +917,27 @@ footer {
 
 ### Implementing Shadows
 
+```css
+h1 {
+  margin-bottom: 24px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  /* text-shadow: 0 10px 5px rgba(0, 0, 0, 0.2); */
+
+  /* 44 52 62 */
+}
+
+/* CHAIRS */
+.chair {
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+```
+
+**output**
+
+![](../images/225.png)
+
 ### Web Design Rules #6\_ Border-radius
 
 ![](../images/154.png)
@@ -926,6 +947,12 @@ footer {
 ![](../images/158.png)
 ![](../images/159.png)
 ![](../images/160.png)
+
+
+### Implementing Border-radius
+
+### Web Design Rules #7\_ Whitespace
+
 ![](../images/161.png)
 ![](../images/162.png)
 ![](../images/163.png)
@@ -965,10 +992,6 @@ footer {
 ![](../images/197.png)
 ![](../images/198.png)
 ![](../images/199.png)
-
-### Implementing Border-radius
-
-### Web Design Rules #7\_ Whitespace
 
 ### Web Design Rules #8\_ Visual Hierarchy
 
