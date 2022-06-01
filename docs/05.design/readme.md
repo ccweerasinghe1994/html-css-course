@@ -1141,3 +1141,5 @@ h1 {
 
 
 ### The Missing Piece\_ Steal Like An Artist!
+![](../images/227.png)
+![](../images/228.png)
