@@ -1003,6 +1003,9 @@ img {
 ![](../images/170.png)
 ![](../images/171.png)
 ![](../images/172.png)
+
+### Web Design Rules #8\_ Visual Hierarchy
+
 ![](../images/173.png)
 ![](../images/174.png)
 ![](../images/175.png)
@@ -1020,6 +1023,81 @@ img {
 ![](../images/187.png)
 ![](../images/188.png)
 ![](../images/189.png)
+
+### Implementing Whitespace and Visual Hierarchy
+
+```css
+header,
+section {
+  margin-bottom: 96px;
+}
+
+/* HEADER */
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 64px;
+}
+
+h1 {
+  margin-bottom: 36px;
+  font-size: 44px;
+  line-height: 1.1;
+  letter-spacing: -1px;
+  /* text-shadow: 0 10px 5px rgba(0, 0, 0, 0.2); */
+
+  /* 44 52 62 */
+}
+
+/* FEATURES */
+.features-icon {
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 24px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #e6fcf5;
+}
+.testimonial-author {
+  color: #c3fae8;
+}
+
+.chair-box {
+  padding: 32px;
+}
+
+.chair-details {
+  list-style: none;
+  margin-bottom: 48px;
+}
+
+.chair-details li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.chair-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  align-items: center;
+}
+```
+**output**
+![](../images/231.png)
+![](../images/232.png)
+![](../images/233.png)
+### Web Design Rules #9\_ User Experience (UX)
+
 ![](../images/190.png)
 ![](../images/191.png)
 ![](../images/192.png)
@@ -1030,13 +1108,36 @@ img {
 ![](../images/197.png)
 ![](../images/198.png)
 ![](../images/199.png)
-
-### Web Design Rules #8\_ Visual Hierarchy
-
-### Implementing Whitespace and Visual Hierarchy
-
-### Web Design Rules #9\_ User Experience (UX)
+![](../images/200.png)
+![](../images/201.png)
+![](../images/202.png)
+![](../images/203.png)
+![](../images/204.png)
+![](../images/205.png)
 
 ### The Website-Personalities-Framework
+
+![](../images/206.png)
+![](../images/207.png)
+![](../images/208.png)
+![](../images/209.png)
+![](../images/210.png)
+![](../images/211.png)
+![](../images/212.png)
+![](../images/213.png)
+![](../images/214.png)
+![](../images/215.png)
+![](../images/216.png)
+![](../images/217.png)
+![](../images/218.png)
+![](../images/219.png)
+![](../images/220.png)
+![](../images/221.png)
+![](../images/222.png)
+![](../images/223.png)
+![](../images/224.png)
+![](../images/225.png)
+![](../images/226.png)
+
 
 ### The Missing Piece\_ Steal Like An Artist!
