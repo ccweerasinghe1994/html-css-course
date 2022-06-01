@@ -903,6 +903,15 @@ footer {
 
 ### Web Design Rules #5\_ Shadows
 
+![](../images/143.png)
+![](../images/144.png)
+![](../images/145.png)
+![](../images/146.png)
+![](../images/147.png)
+![](../images/148.png)
+![](../images/149.png)
+![](../images/150.png)
+
 ### Implementing Shadows
 
 ### Web Design Rules #6\_ Border-radius
