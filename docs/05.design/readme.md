@@ -948,8 +948,46 @@ h1 {
 ![](../images/159.png)
 ![](../images/160.png)
 
-
 ### Implementing Border-radius
+
+```css
+.btn:link,
+btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 100px;
+}
+
+img {
+  border-radius: 12px;
+}
+/* TESTIMONIAL */
+.testimonial-section {
+  background-color: #087f5b;
+  padding: 24px;
+  color: #fff;
+  border-radius: 12px;
+}
+/* CHAIRS */
+.chair {
+  border-radius: 12px;
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+}
+
+.chair img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+```
+
+**output**
+![](../images/228.png)
+![](../images/229.png)
+![](../images/230.png)
 
 ### Web Design Rules #7\_ Whitespace
 
