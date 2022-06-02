@@ -540,6 +540,191 @@ output
 
 ### 🤡 Building a Carousel Component - Part 2
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR : #087f5b
+      GREY COLOR :#343a40
+
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+        line-height: 1;
+      }
+
+      .carousel {
+        background-color: #087f5b;
+        width: 800px;
+        margin: 100px auto;
+        border-radius: 8px;
+        padding: 32px 48px 32px 86px;
+        display: flex;
+        align-items: center;
+        gap: 86px;
+        position: relative;
+      }
+
+      img {
+        border-radius: 8px;
+        height: 200px;
+        transform: scale(1.6);
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.25);
+      }
+      .testimonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+        color: #e6fcf5;
+      }
+      .testimonial-author {
+        font-size: 14px;
+        margin-bottom: 4px;
+        color: #c3fae8;
+      }
+      .testimonial-job {
+        font-size: 12px;
+        color: #c3fae8;
+      }
+      .button {
+        border: none;
+        background-color: #fff;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+      }
+      .button-icon {
+        height: 20px;
+        width: 20px;
+      }
+
+      .btn--left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .btn--right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+      .dots {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+        display: flex;
+        gap: 12px;
+      }
+      .dot {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 2px solid #087f5b;
+        cursor: pointer;
+      }
+      .dot--active {
+        background-color: #087f5b;
+      }
+    </style>
+    <title>Accordion Component</title>
+  </head>
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" alt="maria de mel" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam nulla
+          quia quod cumque unde, et ad minus debitis laborum, distinctio
+          necessitatibus ratione eaque expedita. Debitis ullam delectus alias
+          temporibus laboriosam!"
+        </p>
+        <p class="testimonial-author">maria de mel</p>
+        <p class="testimonial-job">senior product manager at EDP commercial</p>
+      </blockquote>
+      <button class="button btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="button-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <button class="button btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="button-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+      <div class="dots">
+        <button class="dot dot--active">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
+    </div>
+  </body>
+</html>
+```
+
+![](./images/48.png)
+
 ### 🚀 Building a Table Component - Part 1
 
 ### 🪨 Building a Table Component - Part 2
