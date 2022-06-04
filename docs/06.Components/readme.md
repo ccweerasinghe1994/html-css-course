@@ -1393,9 +1393,96 @@ output
 
 ### 🧨 Building a Web Application Layout - Part 1
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR : #087f5b
+      GREY COLOR :#343a40
+
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+        line-height: 1;
+        font-size: 24px;
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+        height: 100vh;
+        text-align: center;
+        font-weight: bold;
+      }
+      nav,
+      menu,
+      aside,
+      main,
+      section {
+        padding-top: 24px;
+      }
+      nav {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+        color: #fff;
+        background-color: #343a40;
+      }
+      menu {
+        grid-column: 2 / -1;
+        background-color: #7048e8;
+      }
+      main {
+        /* background-color: #7048e8; */
+      }
+      section {
+        background-color: #e9ecef;
+      }
+      aside {
+        background-color: #e9ecef;
+      }
+    </style>
+    <title>Accordion Component</title>
+  </head>
+  <body>
+    <nav>NAV</nav>
+    <menu>Menu</menu>
+    <section>inbox</section>
+    <main>EMAIL VIEW</main>
+    <aside>Additional information</aside>
+  </body>
+</html>
+```
+
+**output**
+![](images/97.png)
+
 ### 🌵 Building a Web Application Layout - Part 2
 
-![](images/97.png)
 ![](images/98.png)
 ![](images/99.png)
 ![](images/100.png)
