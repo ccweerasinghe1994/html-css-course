@@ -14,11 +14,12 @@ Default:1
 -- 02 COLORS SYSTEM
 
 - PRIMARY COLOR : #e67e22
-- TINTS:
-- SHADES:
+- TINTS:#fdf2e9
+- SHADES: #cf711f 
 - ACCENTS:
 - GRAYS:
 #555
+#333
 
 --- 05 SHADOWS 
 --- 06 BORDER RADIUS
@@ -46,16 +47,118 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
 }
+.section-hero {
+  padding: 9.6rem 0;
+  background-color: #fdf2e9;
+}
 
-.test {
-  max-width: 50rem;
-  background-color: red;
-  padding: 4rem;
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero-img {
+  width: 100%;
+}
+
+.hero-text-box {
+}
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
   font-size: 2rem;
-  /* width: 1000px; */
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  border-radius: 0.9rem;
+
+  text-decoration: none;
+}
+/* 
+.btn:active,
+.btn:hover {
+  background-color: #e67e22;
+  color: #fff;
+} */
+
+.btn.btn--outline:link,
+.btn.btn--outline:active {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn.btn--outline:hover,
+.btn.btn--outline:visited {
+  background-color: #fdf2e9;
+  color: #555;
+  /* border: 3px solid red; */
+  /* trick to add box shadow to the inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn.btn--full:link,
+.btn.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn.btn--full:hover,
+.btn.btn--full:active {
+  background-color: #cf711f;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
 }

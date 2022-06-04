@@ -6,8 +6,7 @@
 - [Responsive Design Principles](#responsive-design-principles)
 - [How rem and max-width Work](#how-rem-and-max-width-work)
 - [Building the Hero - Part 1](#building-the-hero---part-1)
-- [Building the Hero - Part 2](#building-the-hero---part-2)
-- [Building the Hero - Part 3](#building-the-hero---part-3)
+- [Building the Hero - Part 2/3](#building-the-hero---part-23)
 - [Building the Header](#building-the-header)
 - [Building the Navigation](#building-the-navigation)
 - [Setting Up a Reusable Grid](#setting-up-a-reusable-grid)
@@ -208,9 +207,314 @@ body {
 
 ### Building the Hero - Part 1
 
-### Building the Hero - Part 2
+```css
+/* 
+-- 01 TYPOGRAPHY SYSTEM
+-- ---------------------------------------------------------
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 
-### Building the Hero - Part 3
+- FONT WEIGHT SYSTEM
+Default: 400
+
+- LINE HEIGHT SYSTEM (px)
+Default:1
+
+
+-- 02 COLORS SYSTEM
+
+- PRIMARY COLOR : #e67e22
+- TINTS:
+- SHADES:
+- ACCENTS:
+- GRAYS:
+#555
+
+--- 05 SHADOWS 
+--- 06 BORDER RADIUS
+--- 07 WHITE SPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+      
+*/
+
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 
+  10/16*100 = 62.5%
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hero-img {
+  width: 100%;
+}
+```
+
+**html**
+
+```html
+<section class="section-hero">
+  <div class="hero">
+    <div class="hero-text-box">
+      <h1 class="heading-primary">
+        A healthy meal delivered to your door, every single day
+      </h1>
+      <div class="hero-description">
+        The smart 365-days-per-year food subscription that will make you eat
+        healthy again. Tailored to your personal tastes and nutritional needs.
+        We have delivered 250,000+ meals last year!
+      </div>
+      <a class="btn " href="#">start eating well</a>
+      <a class="btn " href="#">Learn more &darr;</a>
+    </div>
+    <div class="hero-img-box">
+      <img
+        src="./img/hero.png"
+        alt="different type of food in dishes"
+        class="hero-img"
+      />
+    </div>
+  </div>
+</section>
+```
+
+**output**
+![](./images/18.png)
+
+### Building the Hero - Part 2/3
+
+```css
+/* 
+-- 01 TYPOGRAPHY SYSTEM
+-- ---------------------------------------------------------
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHT SYSTEM
+Default: 400
+
+- LINE HEIGHT SYSTEM (px)
+Default:1
+
+
+-- 02 COLORS SYSTEM
+
+- PRIMARY COLOR : #e67e22
+- TINTS:#fdf2e9
+- SHADES: #cf711f 
+- ACCENTS:
+- GRAYS:
+#555
+#333
+
+--- 05 SHADOWS 
+--- 06 BORDER RADIUS
+--- 07 WHITE SPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+      
+*/
+
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 
+  10/16*100 = 62.5%
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+.section-hero {
+  padding: 9.6rem 0;
+  background-color: #fdf2e9;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.hero-img {
+  width: 100%;
+}
+
+.hero-text-box {
+}
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  border-radius: 0.9rem;
+
+  text-decoration: none;
+}
+/* 
+.btn:active,
+.btn:hover {
+  background-color: #e67e22;
+  color: #fff;
+} */
+
+.btn.btn--outline:link,
+.btn.btn--outline:active {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn.btn--outline:hover,
+.btn.btn--outline:visited {
+  background-color: #fdf2e9;
+  color: #555;
+  /* border: 3px solid red; */
+  /* trick to add box shadow to the inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn.btn--full:link,
+.btn.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+  transition: background-color 0.2s ease-in-out;
+}
+.btn.btn--full:hover,
+.btn.btn--full:active {
+  background-color: #cf711f;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.delivered-meals {
+  display: flex;
+  /* flex-direction: column; */
+  gap: 1rem;
+  align-items: center;
+  margin-top: 8rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4.8rem;
+  width: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-text span {
+  color: #cf711f;
+  font-weight: 700;
+}
+```
+
+html
+
+```html
+<section class="section-hero">
+  <div class="hero">
+    <div class="hero-text-box">
+      <h1 class="heading-primary">
+        A healthy meal delivered to your door, every single day
+      </h1>
+      <div class="hero-description">
+        The smart 365-days-per-year food subscription that will make you eat
+        healthy again. Tailored to your personal tastes and nutritional needs.
+      </div>
+      <a class="btn btn--full margin-right-sm" href="#">start eating well</a>
+      <a class="btn btn--outline" href="#">Learn more &darr;</a>
+      <div class="delivered-meals">
+        <div class="delivered-imgs">
+          <img src="./img/customers/customer-1.jpg" alt="customers" />
+          <img src="./img/customers/customer-2.jpg" alt="customers" />
+          <img src="./img/customers/customer-3.jpg" alt="customers" />
+          <img src="./img/customers/customer-4.jpg" alt="customers" />
+          <img src="./img/customers/customer-5.jpg" alt="customers" />
+          <img src="./img/customers/customer-6.jpg" alt="customers" />
+        </div>
+        <p class="delivered-text">
+          <span>250,000+ </span> meals delivered last year!
+        </p>
+      </div>
+    </div>
+    <div class="hero-img-box">
+      <img
+        src="./img/hero.png"
+        alt="different type of food in dishes"
+        class="hero-img"
+      />
+    </div>
+  </div>
+</section>
+```
+
+output
+
+![](./images/19.png)
 
 ### Building the Header
 
@@ -250,8 +554,6 @@ body {
 
 ### Building the Footer - Part 2
 
-![](./images/18.png)
-![](./images/19.png)
 ![](./images/20.png)
 ![](./images/21.png)
 ![](./images/22.png)
