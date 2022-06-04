@@ -4,6 +4,7 @@
   - [ 🎆 CSS fundamentals](#--css-fundamentals)
   - [🌵 css layouts](#-css-layouts)
   - [👽 design](#-design)
+  - [🥶 Components](#-components)
 
 # HTML AND CSS COURSE
 
@@ -16,3 +17,5 @@
 ## [🌵 css layouts](docs/04.CSS-LAYOUTS/readme.md)
 
 ## [👽 design](docs/05.design/readme.md)
+
+## [🥶 Components](docs/06.Components/readme.md)
