@@ -1249,11 +1249,152 @@ output
 
 ### 🎈 Building a Hero Section - Part 2
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR : #087f5b
+      GREY COLOR :#343a40
+
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        font-family: 'Rubik', sans-serif;
+        color: #fff;
+      }
+
+      .container {
+        margin: 0 auto;
+        width: 1200px;
+        padding-top: 32px;
+      }
+      header {
+        height: 100vh;
+        position: relative;
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ), url(hero.jpg);
+        background-size: cover;
+      }
+      .header-container {
+        width: 1200px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+
+        transform: translateX(-50%) translateY(-50%);
+        /* transform: translate(-50%, -50%); */
+      }
+      .header-container-inner {
+        width: 50%;
+      }
+      nav {
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        justify-content: space-between;
+        /* background-image: linear-gradient(to right, red, yellow); */
+      }
+      h1 {
+        font-size: 52px;
+        margin-bottom: 32px;
+        line-height: 1.05;
+      }
+      p {
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 48px;
+      }
+
+      .btn:link,
+      .btn:visited {
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #fff;
+        background-color: #e67e22;
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 9px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      h2 {
+        font-size: 44px;
+        margin-bottom: 48px;
+      }
+      section {
+        padding: 96px 0;
+        background-color: #f7f7f7;
+      }
+    </style>
+    <title>OmiFood hero sections</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <div>LOGO</div>
+        <div>NAVIGATION</div>
+      </nav>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healthy meal delivered to your door, every single day</h1>
+          <p>
+            the smart 365 meal planner that helps you to save time and money.
+            this is a smart way to eat and live healthy. tailored to your needs,
+            your lifestyle and your budget.
+          </p>
+          <a class="btn" href="#">start eating well</a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h2>some random text</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae minima
+          eius quibusdam ad architecto id tenetur temporibus repudiandae ea quo,
+          saepe doloribus, fugiat dolor modi, laboriosam ab inventore illo! Cum.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
+```
+
+**output**
+
+![](images/96.png)
+
 ### 🧨 Building a Web Application Layout - Part 1
 
 ### 🌵 Building a Web Application Layout - Part 2
 
-![](images/96.png)
 ![](images/97.png)
 ![](images/98.png)
 ![](images/99.png)
