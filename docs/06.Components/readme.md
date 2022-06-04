@@ -723,6 +723,8 @@ output
 </html>
 ```
 
+
+![](./images/52.png)
 ![](./images/48.png)
 
 ### 🚀 Building a Table Component - Part 1
@@ -1079,21 +1081,6 @@ output
 ![](./images/51.png)
 
 ### 🧑‍🎤 Web Design Rules #10 - Part 2\_ Layout Patterns
-
-### 🧑‍🚀 Building a Hero Section - Part 1
-
-### 🎈 Building a Hero Section - Part 2
-
-### 🧨 Building a Web Application Layout - Part 1
-
-### 🌵 Building a Web Application Layout - Part 2
-
-![](images/47.png)
-![](images/48.png)
-![](images/49.png)
-![](images/50.png)
-![](images/51.png)
-![](images/52.png)
 ![](images/53.png)
 ![](images/54.png)
 ![](images/55.png)
@@ -1135,6 +1122,19 @@ output
 ![](images/91.png)
 ![](images/92.png)
 ![](images/93.png)
+### 🧑‍🚀 Building a Hero Section - Part 1
+
+### 🎈 Building a Hero Section - Part 2
+
+### 🧨 Building a Web Application Layout - Part 1
+
+### 🌵 Building a Web Application Layout - Part 2
+
+
+
+
+
+
 ![](images/94.png)
 ![](images/95.png)
 ![](images/96.png)
