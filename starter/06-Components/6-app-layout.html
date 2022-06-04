@@ -44,7 +44,6 @@
         font-weight: bold;
       }
       nav,
-      menu,
       aside,
       main,
       section {
@@ -59,12 +58,41 @@
       menu {
         grid-column: 2 / -1;
         background-color: #7048e8;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 0 40px;
       }
-      main {
-        /* background-color: #7048e8; */
+      button {
+        background-color: #5f3dc4;
+        font-size: 18px;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        padding: 8px 12px;
+        font-weight: bold;
+        display: inline-block;
       }
+      button:last-child {
+        background-color: #d6336c;
+        margin-left: auto;
+      }
+
       section {
         background-color: #e9ecef;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        overflow: scroll;
+      }
+      .email {
+        background-color: #adb5bd;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
       }
       aside {
         background-color: #e9ecef;
@@ -74,8 +102,28 @@
   </head>
   <body>
     <nav>NAV</nav>
-    <menu>Menu</menu>
-    <section>inbox</section>
+    <menu>
+      <button>new</button>
+      <button>reply</button>
+      <button>forward</button>
+      <button>mark unread</button>
+      <button>trash</button>
+    </menu>
+    <section>
+      <div class="email">EMAIL 1</div>
+      <div class="email">EMAIL 2</div>
+      <div class="email">EMAIL 3</div>
+      <div class="email">EMAIL 4</div>
+      <div class="email">EMAIL 5</div>
+      <div class="email">EMAIL 6</div>
+      <div class="email">EMAIL 7</div>
+      <div class="email">EMAIL 8</div>
+      <div class="email">EMAIL 9</div>
+      <div class="email">EMAIL 10</div>
+      <div class="email">EMAIL 11</div>
+      <div class="email">EMAIL 12</div>
+      <div class="email">EMAIL 13</div>
+    </section>
     <main>EMAIL VIEW</main>
     <aside>Additional information</aside>
   </body>
