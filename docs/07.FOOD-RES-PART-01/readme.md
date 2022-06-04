@@ -137,6 +137,75 @@ body {
 
 ### How rem and max-width Work
 
+```css
+/* 
+-- 01 TYPOGRAPHY SYSTEM
+-- ---------------------------------------------------------
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHT SYSTEM
+Default: 400
+
+- LINE HEIGHT SYSTEM (px)
+Default:1
+
+
+-- 02 COLORS SYSTEM
+
+- PRIMARY COLOR : #e67e22
+- TINTS:
+- SHADES:
+- ACCENTS:
+- GRAYS:
+#555
+
+--- 05 SHADOWS 
+--- 06 BORDER RADIUS
+--- 07 WHITE SPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+      
+*/
+
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 
+  10/16*100 = 62.5%
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+.test {
+  max-width: 50rem;
+  background-color: red;
+  padding: 4rem;
+  font-size: 2rem;
+  /* width: 1000px; */
+}
+```
+
+**output**
+
+![](./images/16.png)
+![](./images/17.png)
+
 ### Building the Hero - Part 1
 
 ### Building the Hero - Part 2
@@ -181,8 +250,6 @@ body {
 
 ### Building the Footer - Part 2
 
-![](./images/16.png)
-![](./images/17.png)
 ![](./images/18.png)
 ![](./images/19.png)
 ![](./images/20.png)
