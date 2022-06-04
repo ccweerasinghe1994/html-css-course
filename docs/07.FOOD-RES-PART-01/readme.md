@@ -305,6 +305,8 @@ body {
 
 ### Building the Hero - Part 2/3
 
+![](./images/20.png)
+
 ```css
 /* 
 -- 01 TYPOGRAPHY SYSTEM
@@ -554,7 +556,6 @@ output
 
 ### Building the Footer - Part 2
 
-![](./images/20.png)
 ![](./images/21.png)
 ![](./images/22.png)
 ![](./images/23.png)
