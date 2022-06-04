@@ -131,6 +131,10 @@ body {
 
 ### Responsive Design Principles
 
+![](./images/13.png)
+![](./images/14.png)
+![](./images/15.png)
+
 ### How rem and max-width Work
 
 ### Building the Hero - Part 1
@@ -177,9 +181,6 @@ body {
 
 ### Building the Footer - Part 2
 
-![](./images/13.png)
-![](./images/14.png)
-![](./images/15.png)
 ![](./images/16.png)
 ![](./images/17.png)
 ![](./images/18.png)
