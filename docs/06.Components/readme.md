@@ -95,7 +95,7 @@
       /* GENERAL STYLES */
       /* ------------------------ */
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #343a40;
         line-height: 1;
       }
@@ -220,7 +220,7 @@
       /* GENERAL STYLES */
       /* ------------------------ */
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #343a40;
         line-height: 1;
       }
@@ -438,7 +438,7 @@
       /* GENERAL STYLES */
       /* ------------------------ */
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #343a40;
         line-height: 1;
       }
@@ -575,7 +575,7 @@ output
       /* GENERAL STYLES */
       /* ------------------------ */
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #343a40;
         line-height: 1;
       }
@@ -762,7 +762,7 @@ output
       /* GENERAL STYLES */
       /* ------------------------ */
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #343a40;
         line-height: 1;
       }
@@ -851,7 +851,7 @@ output
       /* GENERAL STYLES */
       /* ------------------------ */
       body {
-        font-family: "Inter", sans-serif;
+        font-family: 'Inter', sans-serif;
         color: #343a40;
         line-height: 1;
         display: flex;
@@ -934,6 +934,149 @@ output
 ![](./images/50.png)
 
 ### 🤖 CHALLENGE #1\_ Building a Pagination Component
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /*
+      SPACING SYSTEM (px)
+      2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+      FONT SIZE SYSTEM (px)
+      10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+      */
+      /*
+      MAIN COLOR : #087f5b
+      GREY COLOR :#343a40
+
+      */
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* ------------------------ */
+      /* GENERAL STYLES */
+      /* ------------------------ */
+      body {
+        font-family: 'Inter', sans-serif;
+        color: #343a40;
+        line-height: 1;
+        font-size: 18px;
+      }
+      .pagination {
+        width: 800px;
+        margin: 200px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+      .btn {
+        border: none;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: #087f5b solid 1px;
+        color: #087f5b;
+        padding: 8px;
+        transition: all 0.2s ease-in-out;
+      }
+      .btn:hover {
+        background-color: #087f5b;
+        color: #fff;
+      }
+
+      a:link,
+      a:visited {
+        color: #343a40;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        text-decoration: none;
+        padding: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+      }
+
+      a:hover,
+      a:active {
+        color: #fff;
+        background-color: #087f5b;
+      }
+
+      a.active {
+        background-color: #087f5b;
+        color: #fff;
+      }
+    </style>
+    <title>Accordion Component</title>
+  </head>
+  <body>
+    <div class="pagination">
+      <button class="btn btn--left">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="button-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 19l-7-7 7-7"
+          />
+        </svg>
+      </button>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a class="active" href="#">3</a>
+      <a href="#">4</a>
+      <a href="#">5</a>
+      <a href="#">6</a>
+      <span>...</span>
+      <a href="#">23</a>
+
+      <button class="btn btn--right">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="button-icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9 5l7 7-7 7"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
+</html>
+```
+
+**output**
+
+![](./images/51.png)
 
 ### 🧑‍🎤 Web Design Rules #10 - Part 2\_ Layout Patterns
 
