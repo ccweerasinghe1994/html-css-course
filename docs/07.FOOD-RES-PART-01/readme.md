@@ -749,6 +749,9 @@ output
 
 ### Building the Navigation
 
+adding the navigation markup
+
+```html
 ### Setting Up a Reusable Grid
 
 ### Building the How-It-Works Section - Part 1
