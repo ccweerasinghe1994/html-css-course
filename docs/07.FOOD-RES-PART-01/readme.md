@@ -526,24 +526,19 @@ output
 let's add the header markup
 
 ```html
-  <body>
-    <header class="header">
-      <img
-        class="logo"
-        src="./img/omnifood-logo.png"
-        alt="omniFood logo"
-      />
-      <nav class="main-nav">Navigation</nav>
-    </header>
+<body>
+  <header class="header">
+    <img class="logo" src="./img/omnifood-logo.png" alt="omniFood logo" />
+    <nav class="main-nav">Navigation</nav>
+  </header>
+</body>
 ```
 
 and put the section inside the main element.
 
 ```html
 <main>
-  <section>
-    ....
-  </section>
+  <section>....</section>
 </main>
 ```
 
@@ -740,7 +735,6 @@ body {
   color: #cf711f;
   font-weight: 700;
 }
-
 ```
 
 output
@@ -751,10 +745,279 @@ output
 
 adding the navigation markup
 
+#### Markup Update
+
 ```html
+<nav class="main-nav">
+  <ul class="main-nav-list">
+    <li><a class="main-nav-link" href="#">section 1</a></li>
+    <li><a class="main-nav-link" href="#">section 1</a></li>
+    <li><a class="main-nav-link" href="#">section 1</a></li>
+    <li><a class="main-nav-link" href="#">section 1</a></li>
+    <li><a class="main-nav-link nav-cta" href="#">section 1</a></li>
+  </ul>
+</nav>
+```
+
+#### adding style comments
+
+adding the style standards
+
+```CSS
+/*
+-- 01 TYPOGRAPHY SYSTEM
+-- ---------------------------------------------------------
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHT SYSTEM
+Default: 400
+Medium: 500
+Semi-Bold: 600
+Bold: 700
+
+- LINE HEIGHT SYSTEM (px)
+Default : 1
+small : 1.05
+paragraph default : 1.6
+
+-- 02 COLORS SYSTEM
+
+- PRIMARY COLOR : #e67e22
+- TINTS:#fdf2e9
+- SHADES: #cf711f
+- ACCENTS:
+- GRAYS:
+#555
+#333
+
+--- 05 SHADOWS
+--- 06 BORDER RADIUS
+default: 9px
+
+--- 07 WHITE SPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+
+*/
+
+```
+
+#### Navigation
+
+and adding new styles to the navigation section
+
+```CSS
+/* ************************************** */
+/* NAVIGATION SECTION */
+.main-nav {
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:active {
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+```
+
+#### output
+
+![img](./images/22.png)
+
 ### Setting Up a Reusable Grid
 
+adding the markup for the grid in the main section.
+
+#### Markup Update
+
+```html
+<section class="section-how">
+  <div class="container grid grid--2-cols">
+    <div>Test 1</div>
+    <div>Test 2</div>
+    <div>Test 3</div>
+    <div>Test 4</div>
+  </div>
+</section>
+```
+
+this is added to the main section.
+
+#### adding style to HOW IT WORKS SECTION
+
+```css
+/* ************************************** */
+/* HOW IT WORKS SECTION  */
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: #cf711f;
+}
+
+```
+
+#### adding style to GENERAL REUSABLE COMPONENTS
+
+```CSS
+/* ************************************** */
+/* GENERAL REUSABLE COMPONENTS */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+```
+
 ### Building the How-It-Works Section - Part 1
+
+#### Markup Update How-It-Works Section
+
+```html
+      <section class="section-how">
+        <div class="container">
+          <span class="subheading">How it works</span>
+          <h2 class="heading-secondary">
+            Your daily dose of health in 3 simple steps
+          </h2>
+        </div>
+        <div class="container grid grid--2-cols">
+          <!-- STEP 01 -->
+          <div class="step-text-box">
+            <p class="step-number">01</p>
+            <h3 class="heading-teriary">
+              Tell us what you like (and what not):
+            </h3>
+            <p class="step-description">
+              Never again waste time thinking about what to eat! Omnifood AI
+              will create a 100% personalized weekly meal plan just for you. It
+              makes sure you get all the nutrients and vitamins you need, no
+              matter what diet you follow!
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              class="step-img"
+              src="./img/app/app-screen-1.png"
+              alt="iphone preferences"
+            />
+          </div>
+          <!-- STEP 02 -->
+          <div class="step-img-box">
+            <img
+              class="step-img"
+              src="./img/app/app-screen-2.png"
+              alt="meal approving plan"
+            />
+          </div>
+             <div class="step-text-box">
+            <p class="step-number">02</p>
+            <h3 class="heading-teriary">
+              pprove your weekly meal plan: 
+            </h3>
+            <p class="step-description">
+             Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.
+            </p>
+          </div>
+          <!-- STEP 03 -->
+             <div class="step-text-box">
+            <p class="step-number">03</p>
+            <h3 class="heading-teriary">
+             Receive meals at convenient time: 
+            </h3>
+            <p class="step-description">
+            Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
+            </p>
+          </div>
+          <div class="step-img-box">
+            <img
+              class="step-img"
+              src="./img/app/app-screen-3.png"
+              alt="delivery screen"
+            />
+          </div>
+      </section>
+```
+
+#### adding style to HOW IT WORKS SECTION
+
+adding new heading secondary and subheading to the section.
+
+```css
+.heading-primary,
+.heading-secondary {
+  color: #333;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+```
+
+#### output
+
+![img](./images/23.png)
+
+![img](./images/24.png)
+
+![img](./images/25.png)
 
 ### Building the How-It-Works Section - Part 2
 
