@@ -876,7 +876,6 @@ this is added to the main section.
   padding: 9.6rem 0;
   background-color: #cf711f;
 }
-
 ```
 
 #### adding style to GENERAL REUSABLE COMPONENTS
@@ -951,7 +950,7 @@ this is added to the main section.
              <div class="step-text-box">
             <p class="step-number">02</p>
             <h3 class="heading-teriary">
-              pprove your weekly meal plan: 
+              pprove your weekly meal plan:
             </h3>
             <p class="step-description">
              Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.
@@ -961,7 +960,7 @@ this is added to the main section.
              <div class="step-text-box">
             <p class="step-number">03</p>
             <h3 class="heading-teriary">
-             Receive meals at convenient time: 
+             Receive meals at convenient time:
             </h3>
             <p class="step-description">
             Best chefs in town will cook your selected meal every day, and we will deliver it to your door whenever works best for you. You can change delivery schedule and address daily!
@@ -1021,7 +1020,345 @@ adding new heading secondary and subheading to the section.
 
 ### Building the How-It-Works Section - Part 2
 
+let's create a seperate file for general reusable components. called general.css
+
+```css
+/* 
+-- 01 TYPOGRAPHY SYSTEM
+-- ---------------------------------------------------------
+- FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- FONT WEIGHT SYSTEM
+Default: 400
+Medium: 500
+Semi-Bold: 600
+Bold: 700
+
+- LINE HEIGHT SYSTEM (px)
+Default : 1
+small : 1.05
+medium : 1.2
+paragraph default : 1.6
+
+-- 02 COLORS SYSTEM
+
+- PRIMARY COLOR : #e67e22
+- TINTS:
+#fdf2e9
+#fae5d3
+- SHADES: #cf711f 
+- ACCENTS:
+- GRAYS:
+#555
+#333
+
+--- 03 LETTER SPACING 
+-0.5px
+0.75px
+
+
+
+
+--- 05 SHADOWS 
+--- 06 BORDER RADIUS
+default: 9px
+
+--- 07 WHITE SPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+      
+*/
+
+/* global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 
+  10/16*100 = 62.5%
+  */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/* ************************************** */
+/* GENERAL REUSABLE COMPONENTS */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  row-gap: 9.6rem;
+  column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-center-v {
+  align-items: center;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  color: #333;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  font-weight: 600;
+  border-radius: 0.9rem;
+
+  text-decoration: none;
+}
+/* 
+.btn:active,
+.btn:hover {
+  background-color: #e67e22;
+  color: #fff;
+} */
+
+.btn.btn--outline:link,
+.btn.btn--outline:active {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn.btn--outline:hover,
+.btn.btn--outline:visited {
+  background-color: #fdf2e9;
+  color: #555;
+  /* border: 3px solid red; */
+  /* trick to add box shadow to the inside */
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+```
+
+#### in this section we will add
+
+.step-number class
+
+```CSS
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #eee;
+  margin-bottom: 1.2rem;
+}
+```
+
+#### heading-tertiary class
+
+```CSS
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+```
+
+#### adding style to paragraph
+
+```CSS
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+```
+
+#### output so far
+
+![img](./images/26.png)
+
+#### let's style the image
+
+let's decrease the size of the image
+
+```CSS
+.step-img {
+  width: 35%;
+}
+```
+
+and vertically center the image
+
+```CSS
+.grid-center-v {
+  align-items: center;
+}
+```
+
+add this class to the grid container
+
+```html
+<div class="container grid grid--2-cols grid-center-v"></div>
+```
+
+### output so far
+
+![img](./images/27.png)
+
+let's add the background images effect using ::before and ::after
+
+```CSS
+.step-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.step-img-box::after,
+.step-img-box::before {
+  content: '';
+  display: block;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.step-img-box::before {
+  width: 60%;
+
+  /* this won't work */
+  /* height: 60%; */
+  padding-bottom: 60%;
+
+  background-color: #fdf2e9;
+
+  z-index: -2;
+}
+
+.step-img-box::after {
+   width: 50%;
+
+  /* this won't work */
+  /* height: 60%; */
+  padding-bottom: 50%;
+
+  background-color: #fae5d3;
+
+  z-index: -1;
+}
+```
+
+we can't add the psudo class to the image, so we need to add it to the container.
+
+#### final output
+
+![img](./images/28.png)
+
 ### Building the Featured-In Section
+
+#### adding html section
+
+```HTML
+    <section class="section-featured" >
+        <div class="container">
+          <h2 class="heading-feature-in" >As Featured in</h2>
+          <div class="logos">
+            <img src="img/logos/techcrunch.png" alt="techcrunch logo">
+            <img src="img/logos/business-insider.png" alt="business-insider logo">
+            <img src="img/logos/the-new-york-times.png" alt="the-new-york-times logo">
+            <img src="img/logos/forbes.png" alt="forbes logo">
+            <img src="img/logos/usa-today.png" alt="usa-today logo">
+          </div>
+        </div>
+    </section>
+```
+
+#### adding css section
+
+```CSS
+/* ************************************** */
+/* FEATURED SECTION */
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-feature-in {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 2.4rem;
+  color: #888;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+```
+
+#### output
+
+![img](./images/29.png)
 
 ### Building the Meals Section - Part 1
 
@@ -1049,11 +1386,6 @@ adding new heading secondary and subheading to the section.
 
 ### Building the Footer - Part 2
 
-![img](./images/21.png)
-![img](./images/22.png)
-![img](./images/23.png)
-![img](./images/24.png)
-![img](./images/25.png)
 ![img](./images/26.png)
 ![img](./images/27.png)
 ![img](./images/28.png)
