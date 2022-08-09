@@ -60,6 +60,9 @@
       - [Output](#output-8)
       - [Complete output](#complete-output)
     - [Building the Pricing Section - Part 1](#building-the-pricing-section---part-1)
+      - [Adding pricing section](#adding-pricing-section)
+      - [adding styles](#adding-styles-5)
+      - [output](#output-9)
     - [Building the Pricing Section - Part 2](#building-the-pricing-section---part-2)
     - [Building the Features Part](#building-the-features-part)
     - [Building the Call-To-Action Section - Part 1](#building-the-call-to-action-section---part-1)
@@ -1895,6 +1898,140 @@ strong {
 ![img](./images/35.png)
 
 ### Building the Pricing Section - Part 1
+
+#### Adding pricing section
+
+```html
+<section class="section-pricing">
+  <div class="container">
+    <span class="subheading">Pricing</span>
+    <h2 class="heading-secondary">Eating well without breaking the bank</h2>
+  </div>
+  <div class="container grid grid--2-cols">
+    <div class="pricing-plan">
+      <header class="plan-header">
+        <p class="plan-name">Starter</p>
+        <p class="plan-price"><span>$</span>399</p>
+        <p class="plan-text">per month. That's just $13 per meal!</p>
+      </header>
+      <ul class="list">
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>1 meal per day</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>Order times are between 11am and 9pm</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>Delivery is free</span>
+        </li>
+      </ul>
+      <div class="plan-sign-up">
+        <a class="btn btn--full" href="#">start eating well</a>
+      </div>
+    </div>
+    <div class="pricing-plan">
+      <header class="plan-header">
+        <p class="plan-name">Complete</p>
+        <p class="plan-price"><span>$</span>649</p>
+        <p class="plan-text">per month. That's just $11 per meal!</p>
+      </header>
+      <ul class="list">
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>2 meals per day</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>OOrder 24/7</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>Delivery is free</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>Get access to latest recipes</span>
+        </li>
+      </ul>
+      <div class="plan-sign-up">
+        <a class="btn btn--full" href="#">start eating well</a>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+#### adding styles
+
+```CSS
+/* move this to the common section */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: #e67e22;
+}
+/* ************************************** */
+/* PRICING SECTION */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing-plan {
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 7.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+```
+
+#### output
+
+![img](./images/36.png)
 
 ### Building the Pricing Section - Part 2
 
