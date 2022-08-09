@@ -38,11 +38,13 @@
       - [adding html section](#adding-html-section)
       - [adding css section](#adding-css-section)
       - [output](#output-3)
+    - [Building the Meals Section - Part 1](#building-the-meals-section---part-1)
       - [Adding html](#adding-html)
       - [Adding styles](#adding-styles)
       - [Output](#output-4)
-    - [Building the Meals Section - Part 1](#building-the-meals-section---part-1)
     - [Building the Meals Section - Part 2](#building-the-meals-section---part-2)
+      - [Adding HTML](#adding-html-1)
+      - [Adding styles](#adding-styles-1)
     - [Building the Meals Section - Part 3](#building-the-meals-section---part-3)
     - [Building the Testimonials Section - Part 1](#building-the-testimonials-section---part-1)
     - [Building the Testimonials Section - Part 2](#building-the-testimonials-section---part-2)
@@ -1385,6 +1387,8 @@ we can't add the psudo class to the image, so we need to add it to the container
 
 ![img](./images/29.png)
 
+### Building the Meals Section - Part 1
+
 #### Adding html
 
 ```html
@@ -1461,9 +1465,146 @@ we can't add the psudo class to the image, so we need to add it to the container
 
 ![img](./images/30.png)
 
-### Building the Meals Section - Part 1
-
 ### Building the Meals Section - Part 2
+
+#### Adding HTML
+
+```html
+ <div class="container grid grid--3-cols">
+        <div class="meal">
+          <img class="meal-img" src="img/meals/meal-1.jpg" alt="JapJapanese Gyozasanyze ">
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegetarian">Vegetarian</span>
+            </div>
+            <p class="meal-title">Japanese Gyozas</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span>
+                  <strong>650</strong> Calories
+                </span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                <span>
+                  NutriScore &reg; <strong>74</strong>
+                </span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span>
+                  <strong>4.9</strong> rating (571)
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="meal">
+          <img class="meal-img" src="img/meals/meal-2.jpg" alt="Avocado Salad ">
+          <div class="meal-content">
+            <div class="meal-tags">
+              <span class="tag tag--vegan">Vegan</span>
+              <span class="tag tag--paleo">Paleo</span>
+            </div>
+            <p class="meal-title">Avocado Salad</p>
+            <ul class="meal-attributes">
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+                <span>
+                  <strong>400</strong> Calories
+                </span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+                <span>
+                  NutriScore &reg; <strong>92</strong>
+                </span>
+              </li>
+              <li class="meal-attribute">
+                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+                <span>
+                  <strong>4.8</strong> rating (441)
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="list">list of meal</div>
+      </div>
+```
+
+#### Adding styles
+
+```CSS
+/* ************************************** */
+/* MEALS SECTION  */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #51cf66;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+strong {
+  font-weight: 500;
+}
+```
 
 ### Building the Meals Section - Part 3
 
