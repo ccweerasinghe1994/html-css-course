@@ -1,34 +1,59 @@
 # Food Restaurant Part 1 🏠
 
-- [Food Restaurant Part 1](../../README.md)
+- [Food Restaurant Part 1 🏠](#food-restaurant-part-1-)
   - [The 7 Steps to a Great Website](#the-7-steps-to-a-great-website)
-  - [Defining and Planning the Project (Steps 1 and 2)](#defining-and-planning-the-project-steps-1-and-2)
-    - [sections](#sections)
-  - [Sketching Initial Layout Ideas (Step 3)](#sketching-initial-layout-ideas-step-3)
-  - [First Design and Development Steps (Step 4)](#first-design-and-development-steps-step-4)
-  - [Responsive Design Principles](#responsive-design-principles)
-  - [How rem and max-width Work](#how-rem-and-max-width-work)
-  - [Building the Hero - Part 1](#building-the-hero---part-1)
-  - [Building the Hero - Part 2/3](#building-the-hero---part-23)
-  - [Building the Header](#building-the-header)
-  - [Building the Navigation](#building-the-navigation)
-  - [Setting Up a Reusable Grid](#setting-up-a-reusable-grid)
-  - [Building the How-It-Works Section - Part 1](#building-the-how-it-works-section---part-1)
-  - [Building the How-It-Works Section - Part 2](#building-the-how-it-works-section---part-2)
-  - [Building the Featured-In Section](#building-the-featured-in-section)
-  - [Building the Meals Section - Part 1](#building-the-meals-section---part-1)
-  - [Building the Meals Section - Part 2](#building-the-meals-section---part-2)
-  - [Building the Meals Section - Part 3](#building-the-meals-section---part-3)
-  - [Building the Testimonials Section - Part 1](#building-the-testimonials-section---part-1)
-  - [Building the Testimonials Section - Part 2](#building-the-testimonials-section---part-2)
-  - [Building the Pricing Section - Part 1](#building-the-pricing-section---part-1)
-  - [Building the Pricing Section - Part 2](#building-the-pricing-section---part-2)
-  - [Building the Features Part](#building-the-features-part)
-  - [Building the Call-To-Action Section - Part 1](#building-the-call-to-action-section---part-1)
-  - [Building the Call-To-Action Section - Part 2](#building-the-call-to-action-section---part-2)
-  - [Building the Call-To-Action Section - Part 3](#building-the-call-to-action-section---part-3)
-  - [Building the Footer - Part 1](#building-the-footer---part-1)
-  - [Building the Footer - Part 2](#building-the-footer---part-2)
+    - [Defining and Planning the Project (Steps 1 and 2)](#defining-and-planning-the-project-steps-1-and-2)
+      - [sections](#sections)
+    - [Sketching Initial Layout Ideas (Step 3)](#sketching-initial-layout-ideas-step-3)
+    - [First Design and Development Steps (Step 4)](#first-design-and-development-steps-step-4)
+    - [Responsive Design Principles](#responsive-design-principles)
+    - [How rem and max-width Work](#how-rem-and-max-width-work)
+      - [**output**](#output)
+    - [Building the Hero - Part 1](#building-the-hero---part-1)
+      - [html](#html)
+    - [Building the Hero - Part 2/3](#building-the-hero---part-23)
+    - [Building the Header](#building-the-header)
+    - [Building the Navigation](#building-the-navigation)
+      - [Markup Update](#markup-update)
+      - [adding style comments](#adding-style-comments)
+      - [Navigation](#navigation)
+      - [output](#output-1)
+    - [Setting Up a Reusable Grid](#setting-up-a-reusable-grid)
+      - [Markup Update](#markup-update-1)
+      - [adding style to HOW IT WORKS SECTION](#adding-style-to-how-it-works-section)
+      - [adding style to GENERAL REUSABLE COMPONENTS](#adding-style-to-general-reusable-components)
+    - [Building the How-It-Works Section - Part 1](#building-the-how-it-works-section---part-1)
+      - [Markup Update How-It-Works Section](#markup-update-how-it-works-section)
+      - [adding style to HOW IT WORKS SECTION](#adding-style-to-how-it-works-section-1)
+      - [output](#output-2)
+    - [Building the How-It-Works Section - Part 2](#building-the-how-it-works-section---part-2)
+      - [in this section we will add](#in-this-section-we-will-add)
+      - [heading-tertiary class](#heading-tertiary-class)
+      - [adding style to paragraph](#adding-style-to-paragraph)
+      - [output so far](#output-so-far)
+      - [let's style the image](#lets-style-the-image)
+    - [output so far](#output-so-far-1)
+      - [final output](#final-output)
+    - [Building the Featured-In Section](#building-the-featured-in-section)
+      - [adding html section](#adding-html-section)
+      - [adding css section](#adding-css-section)
+      - [output](#output-3)
+      - [Adding html](#adding-html)
+      - [Adding styles](#adding-styles)
+      - [Output](#output-4)
+    - [Building the Meals Section - Part 1](#building-the-meals-section---part-1)
+    - [Building the Meals Section - Part 2](#building-the-meals-section---part-2)
+    - [Building the Meals Section - Part 3](#building-the-meals-section---part-3)
+    - [Building the Testimonials Section - Part 1](#building-the-testimonials-section---part-1)
+    - [Building the Testimonials Section - Part 2](#building-the-testimonials-section---part-2)
+    - [Building the Pricing Section - Part 1](#building-the-pricing-section---part-1)
+    - [Building the Pricing Section - Part 2](#building-the-pricing-section---part-2)
+    - [Building the Features Part](#building-the-features-part)
+    - [Building the Call-To-Action Section - Part 1](#building-the-call-to-action-section---part-1)
+    - [Building the Call-To-Action Section - Part 2](#building-the-call-to-action-section---part-2)
+    - [Building the Call-To-Action Section - Part 3](#building-the-call-to-action-section---part-3)
+    - [Building the Footer - Part 1](#building-the-footer---part-1)
+    - [Building the Footer - Part 2](#building-the-footer---part-2)
 
 ## The 7 Steps to a Great Website
 
@@ -1360,6 +1385,82 @@ we can't add the psudo class to the image, so we need to add it to the container
 
 ![img](./images/29.png)
 
+#### Adding html
+
+```html
+<section class="section-meals">
+      <div class="container">
+        <span class="subheading">Meals</span>
+        <h2 class="heading-secondary">
+          Omnifood AI chooses from 5,000+ recipes
+        </h2>
+      </div>
+      <div class="container grid grid--3-cols">
+        <div class="meal">
+          <img class="meal-img" src="img/meals/meal-1.jpg" alt="JapJapanese Gyozasanyze ">
+          <span class="tag">Vegetarian</span>
+          <p class="meal-title">Japanese Gyozas</p>
+          <ul class="meal-attributes">
+            <li class="meal-attribute">
+              <ion-icon name="flame-outline"></ion-icon>
+              <span>
+                650 Calories
+              </span>
+            </li>
+            <li class="meal-attribute">
+              <ion-icon name="restaurant-outline"></ion-icon>
+              <span>
+                NutriScore &reg; 74
+              </span>
+            </li>
+            <li class="meal-attribute">
+              <ion-icon name="star-outline"></ion-icon>
+              <span>
+                4.9 rating (571)
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="meal">Meal</div>
+        <div class="list">list of meal</div>
+      </div>
+    </section>
+```
+
+#### Adding styles
+
+```CSS
+/* ************************************** */
+/* MEALS SECTION  */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attributes {
+  font-size: 1.8rem;
+}
+.meal-img {
+  width: 100%;
+}
+
+```
+
+#### Output
+
+![img](./images/30.png)
+
 ### Building the Meals Section - Part 1
 
 ### Building the Meals Section - Part 2
@@ -1386,10 +1487,6 @@ we can't add the psudo class to the image, so we need to add it to the container
 
 ### Building the Footer - Part 2
 
-![img](./images/26.png)
-![img](./images/27.png)
-![img](./images/28.png)
-![img](./images/29.png)
 ![img](./images/30.png)
 ![img](./images/31.png)
 ![img](./images/32.png)
