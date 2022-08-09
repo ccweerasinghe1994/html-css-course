@@ -45,7 +45,11 @@
     - [Building the Meals Section - Part 2](#building-the-meals-section---part-2)
       - [Adding HTML](#adding-html-1)
       - [Adding styles](#adding-styles-1)
+      - [Output](#output-5)
     - [Building the Meals Section - Part 3](#building-the-meals-section---part-3)
+      - [Adding Diet section](#adding-diet-section)
+      - [Adding styles](#adding-styles-2)
+      - [Output](#output-6)
     - [Building the Testimonials Section - Part 1](#building-the-testimonials-section---part-1)
     - [Building the Testimonials Section - Part 2](#building-the-testimonials-section---part-2)
     - [Building the Pricing Section - Part 1](#building-the-pricing-section---part-1)
@@ -1393,42 +1397,38 @@ we can't add the psudo class to the image, so we need to add it to the container
 
 ```html
 <section class="section-meals">
-      <div class="container">
-        <span class="subheading">Meals</span>
-        <h2 class="heading-secondary">
-          Omnifood AI chooses from 5,000+ recipes
-        </h2>
-      </div>
-      <div class="container grid grid--3-cols">
-        <div class="meal">
-          <img class="meal-img" src="img/meals/meal-1.jpg" alt="JapJapanese Gyozasanyze ">
-          <span class="tag">Vegetarian</span>
-          <p class="meal-title">Japanese Gyozas</p>
-          <ul class="meal-attributes">
-            <li class="meal-attribute">
-              <ion-icon name="flame-outline"></ion-icon>
-              <span>
-                650 Calories
-              </span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon name="restaurant-outline"></ion-icon>
-              <span>
-                NutriScore &reg; 74
-              </span>
-            </li>
-            <li class="meal-attribute">
-              <ion-icon name="star-outline"></ion-icon>
-              <span>
-                4.9 rating (571)
-              </span>
-            </li>
-          </ul>
-        </div>
-        <div class="meal">Meal</div>
-        <div class="list">list of meal</div>
-      </div>
-    </section>
+  <div class="container">
+    <span class="subheading">Meals</span>
+    <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
+  </div>
+  <div class="container grid grid--3-cols">
+    <div class="meal">
+      <img
+        class="meal-img"
+        src="img/meals/meal-1.jpg"
+        alt="JapJapanese Gyozasanyze "
+      />
+      <span class="tag">Vegetarian</span>
+      <p class="meal-title">Japanese Gyozas</p>
+      <ul class="meal-attributes">
+        <li class="meal-attribute">
+          <ion-icon name="flame-outline"></ion-icon>
+          <span> 650 Calories </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon name="restaurant-outline"></ion-icon>
+          <span> NutriScore &reg; 74 </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon name="star-outline"></ion-icon>
+          <span> 4.9 rating (571) </span>
+        </li>
+      </ul>
+    </div>
+    <div class="meal">Meal</div>
+    <div class="list">list of meal</div>
+  </div>
+</section>
 ```
 
 #### Adding styles
@@ -1470,68 +1470,60 @@ we can't add the psudo class to the image, so we need to add it to the container
 #### Adding HTML
 
 ```html
- <div class="container grid grid--3-cols">
-        <div class="meal">
-          <img class="meal-img" src="img/meals/meal-1.jpg" alt="JapJapanese Gyozasanyze ">
-          <div class="meal-content">
-            <div class="meal-tags">
-              <span class="tag tag--vegetarian">Vegetarian</span>
-            </div>
-            <p class="meal-title">Japanese Gyozas</p>
-            <ul class="meal-attributes">
-              <li class="meal-attribute">
-                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
-                <span>
-                  <strong>650</strong> Calories
-                </span>
-              </li>
-              <li class="meal-attribute">
-                <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
-                <span>
-                  NutriScore &reg; <strong>74</strong>
-                </span>
-              </li>
-              <li class="meal-attribute">
-                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                <span>
-                  <strong>4.9</strong> rating (571)
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="meal">
-          <img class="meal-img" src="img/meals/meal-2.jpg" alt="Avocado Salad ">
-          <div class="meal-content">
-            <div class="meal-tags">
-              <span class="tag tag--vegan">Vegan</span>
-              <span class="tag tag--paleo">Paleo</span>
-            </div>
-            <p class="meal-title">Avocado Salad</p>
-            <ul class="meal-attributes">
-              <li class="meal-attribute">
-                <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
-                <span>
-                  <strong>400</strong> Calories
-                </span>
-              </li>
-              <li class="meal-attribute">
-                <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
-                <span>
-                  NutriScore &reg; <strong>92</strong>
-                </span>
-              </li>
-              <li class="meal-attribute">
-                <ion-icon class="meal-icon" name="star-outline"></ion-icon>
-                <span>
-                  <strong>4.8</strong> rating (441)
-                </span>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="list">list of meal</div>
+<div class="container grid grid--3-cols">
+  <div class="meal">
+    <img
+      class="meal-img"
+      src="img/meals/meal-1.jpg"
+      alt="JapJapanese Gyozasanyze "
+    />
+    <div class="meal-content">
+      <div class="meal-tags">
+        <span class="tag tag--vegetarian">Vegetarian</span>
       </div>
+      <p class="meal-title">Japanese Gyozas</p>
+      <ul class="meal-attributes">
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+          <span> <strong>650</strong> Calories </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+          <span> NutriScore &reg; <strong>74</strong> </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+          <span> <strong>4.9</strong> rating (571) </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="meal">
+    <img class="meal-img" src="img/meals/meal-2.jpg" alt="Avocado Salad " />
+    <div class="meal-content">
+      <div class="meal-tags">
+        <span class="tag tag--vegan">Vegan</span>
+        <span class="tag tag--paleo">Paleo</span>
+      </div>
+      <p class="meal-title">Avocado Salad</p>
+      <ul class="meal-attributes">
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+          <span> <strong>400</strong> Calories </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+          <span> NutriScore &reg; <strong>92</strong> </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+          <span> <strong>4.8</strong> rating (441) </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="list">list of meal</div>
+</div>
 ```
 
 #### Adding styles
@@ -1606,7 +1598,122 @@ strong {
 }
 ```
 
+#### Output
+
+![img](./images/31.png)
+
 ### Building the Meals Section - Part 3
+
+#### Adding Diet section
+
+```HTML
+<div class="diets">
+          <h3 class="heading-tertiary" >Works with any diet </h3>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Vegetarian</span>
+            </li>
+
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Vegan</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Pescatarian</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Gluten-free</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Lactose-free</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Keto</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Paleo</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Low FODMAP</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Kid-friendly</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container all-recipes">
+        <a href="#" class="link">See all recipes &rarr;</a>
+      </div>
+```
+
+#### Adding styles
+
+```CSS
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.link:active,
+.link:link {
+  text-decoration: none;
+  display: inline-block;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:visited {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+```
+
+#### Output
+
+![img](./images/32.png)
 
 ### Building the Testimonials Section - Part 1
 
