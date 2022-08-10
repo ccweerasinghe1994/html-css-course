@@ -72,6 +72,9 @@
       - [adding the styles](#adding-the-styles)
       - [output](#output-11)
     - [Building the Call-To-Action Section - Part 1](#building-the-call-to-action-section---part-1)
+      - [adding the markup](#adding-the-markup-1)
+      - [adding the style](#adding-the-style)
+      - [output](#output-12)
     - [Building the Call-To-Action Section - Part 2](#building-the-call-to-action-section---part-2)
     - [Building the Call-To-Action Section - Part 3](#building-the-call-to-action-section---part-3)
     - [Building the Footer - Part 1](#building-the-footer---part-1)
@@ -2158,6 +2161,59 @@ strong {
 ![img](./images/38.png)
 
 ### Building the Call-To-Action Section - Part 1
+
+#### adding the markup
+
+```html
+<section class="section-cta">
+  <div class="container">
+    <div class="cta">
+      <div class="cta-text-box">CTA</div>
+      <div
+        class="cta-img-box"
+        role="img"
+        aria-label="Woman enjoying food"
+      ></div>
+    </div>
+  </div>
+</section>
+```
+
+#### adding the style
+
+```css
+/* ************************************** */
+/* CTA SECTION */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  height: 50rem;
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ), url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+```
+
+#### output
+
+![img](./images/39.png)
 
 ### Building the Call-To-Action Section - Part 2
 
