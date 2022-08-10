@@ -64,6 +64,9 @@
       - [adding styles](#adding-styles-5)
       - [output](#output-9)
     - [Building the Pricing Section - Part 2](#building-the-pricing-section---part-2)
+      - [Adding the new styles](#adding-the-new-styles)
+      - [adding the new markup for Features Part](#adding-the-new-markup-for-features-part)
+      - [output](#output-10)
     - [Building the Features Part](#building-the-features-part)
     - [Building the Call-To-Action Section - Part 1](#building-the-call-to-action-section---part-1)
     - [Building the Call-To-Action Section - Part 2](#building-the-call-to-action-section---part-2)
@@ -2034,6 +2037,55 @@ strong {
 ![img](./images/36.png)
 
 ### Building the Pricing Section - Part 2
+
+#### Adding the new styles
+
+```CSS
+.pricing-plan-starter {
+  justify-self: end;
+  padding: 4.6rem;
+  border: 2px solid #fdf2e9;
+}
+.pricing-plan {
+  border-radius: 11px;
+
+  width: 75%;
+}
+.pricing-plan-complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan-complete::after {
+  content: 'Best Value';
+  position: absolute;
+  top: 5%;
+  right: -8%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+  padding: 0.8rem 3.2rem;
+  transform: rotate(45deg);
+}
+```
+
+#### adding the new markup for Features Part
+
+```html
+<div class="container grid grid--4-cols">
+  <div class="feature">feature 1</div>
+  <div class="feature">feature 2</div>
+  <div class="feature">feature 3</div>
+  <div class="feature">feature 4</div>
+</div>
+```
+
+#### output
+
+![img](./images/37.png)
 
 ### Building the Features Part
 
