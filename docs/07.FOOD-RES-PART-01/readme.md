@@ -76,7 +76,9 @@
       - [adding the style](#adding-the-style)
       - [output](#output-12)
     - [Building the Call-To-Action Section - Part 2](#building-the-call-to-action-section---part-2)
-    - [Building the Call-To-Action Section - Part 3](#building-the-call-to-action-section---part-3)
+      - [Adding the form](#adding-the-form)
+      - [adding styles](#adding-styles-6)
+      - [output](#output-13)
     - [Building the Footer - Part 1](#building-the-footer---part-1)
     - [Building the Footer - Part 2](#building-the-footer---part-2)
 
@@ -2217,7 +2219,115 @@ strong {
 
 ### Building the Call-To-Action Section - Part 2
 
-### Building the Call-To-Action Section - Part 3
+#### Adding the form
+
+```html
+<div class="cta">
+  <div class="cta-text-box">
+    <div class="heading-secondary">Get yout first meal free</div>
+    <div class="cta-text">
+      Healthy, tasty and hassle-free meals are waiting for you. Start eating
+      well today. You can cancel or pause anytime. And the first meal is on us!
+    </div>
+    <form class="cta-form" action="#">
+      <div>
+        <label for="full-name">Full Name</label>
+        <input
+          type="text"
+          id="full-name"
+          placeholder="chamara weerasinghe"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="abc@test.com" required />
+      </div>
+      <div>
+        <label for="select-where"> Where do you here from us </label>
+        <select id="select-where" required>
+          <option value="">please select a option</option>
+          <option value="friends">Friends and Family</option>
+          <option value="youtube">youtube</option>
+          <option value="podcast">podcast</option>
+          <option value="ad">ad</option>
+          <option value="others">others</option>
+        </select>
+      </div>
+      <button class="btn btn--form">Sign up now</button>
+    </form>
+  </div>
+</div>
+```
+
+#### adding styles
+
+```css
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 4.8rem;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fae5d3;
+  border-radius: 9px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(250, 229, 211, 0.5);
+}
+```
+
+#### output
+
+![img](./images/40.png)
 
 ### Building the Footer - Part 1
 
