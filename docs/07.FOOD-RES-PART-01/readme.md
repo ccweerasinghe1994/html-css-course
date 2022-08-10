@@ -68,6 +68,9 @@
       - [adding the new markup for Features Part](#adding-the-new-markup-for-features-part)
       - [output](#output-10)
     - [Building the Features Part](#building-the-features-part)
+      - [adding the markup](#adding-the-markup)
+      - [adding the styles](#adding-the-styles)
+      - [output](#output-11)
     - [Building the Call-To-Action Section - Part 1](#building-the-call-to-action-section---part-1)
     - [Building the Call-To-Action Section - Part 2](#building-the-call-to-action-section---part-2)
     - [Building the Call-To-Action Section - Part 3](#building-the-call-to-action-section---part-3)
@@ -2088,6 +2091,71 @@ strong {
 ![img](./images/37.png)
 
 ### Building the Features Part
+
+#### adding the markup
+
+```html
+ <div class="container grid">
+        <aside class="plan-details" >Prices include all applicable taxes. You can cancel at any time. Both plans include the following: </aside>
+      </div>
+      <div class="container grid grid--4-cols">
+        <div class="feature">
+          <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+          <p class="feature-title">Never cook again !</p>
+          <p class="feature-text">Our subscriptions cover 365 days per year, even including major holidays.</p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+          <p class="feature-title">Local and organic</p>
+          <p class="feature-text">Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+          <p class="feature-title">No waste</p>
+          <p class="feature-text">All our partners only use reusable containers to package all your meals.</p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+          <p class="feature-title">Pause anytime</p>
+          <p class="feature-text">Going on vacation? Just pause your subscription, and we refund unused days.</p>
+        </div>
+
+      </div>
+    </section>
+```
+
+#### adding the styles
+
+```CSS
+.plan-details{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.feature-icon {
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-bottom: 3.2rem;
+  background-color: #fae5d3;
+  border-radius: 100px;
+  padding: 1.6rem;
+}
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+```
+
+#### output
+
+![img](./images/38.png)
 
 ### Building the Call-To-Action Section - Part 1
 
