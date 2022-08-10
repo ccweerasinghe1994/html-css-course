@@ -1,34 +1,84 @@
 # Food Restaurant Part 1 🏠
 
-- [Food Restaurant Part 1](../../README.md)
+- [Food Restaurant Part 1 🏠](#food-restaurant-part-1-)
   - [The 7 Steps to a Great Website](#the-7-steps-to-a-great-website)
-  - [Defining and Planning the Project (Steps 1 and 2)](#defining-and-planning-the-project-steps-1-and-2)
-    - [sections](#sections)
-  - [Sketching Initial Layout Ideas (Step 3)](#sketching-initial-layout-ideas-step-3)
-  - [First Design and Development Steps (Step 4)](#first-design-and-development-steps-step-4)
-  - [Responsive Design Principles](#responsive-design-principles)
-  - [How rem and max-width Work](#how-rem-and-max-width-work)
-  - [Building the Hero - Part 1](#building-the-hero---part-1)
-  - [Building the Hero - Part 2/3](#building-the-hero---part-23)
-  - [Building the Header](#building-the-header)
-  - [Building the Navigation](#building-the-navigation)
-  - [Setting Up a Reusable Grid](#setting-up-a-reusable-grid)
-  - [Building the How-It-Works Section - Part 1](#building-the-how-it-works-section---part-1)
-  - [Building the How-It-Works Section - Part 2](#building-the-how-it-works-section---part-2)
-  - [Building the Featured-In Section](#building-the-featured-in-section)
-  - [Building the Meals Section - Part 1](#building-the-meals-section---part-1)
-  - [Building the Meals Section - Part 2](#building-the-meals-section---part-2)
-  - [Building the Meals Section - Part 3](#building-the-meals-section---part-3)
-  - [Building the Testimonials Section - Part 1](#building-the-testimonials-section---part-1)
-  - [Building the Testimonials Section - Part 2](#building-the-testimonials-section---part-2)
-  - [Building the Pricing Section - Part 1](#building-the-pricing-section---part-1)
-  - [Building the Pricing Section - Part 2](#building-the-pricing-section---part-2)
-  - [Building the Features Part](#building-the-features-part)
-  - [Building the Call-To-Action Section - Part 1](#building-the-call-to-action-section---part-1)
-  - [Building the Call-To-Action Section - Part 2](#building-the-call-to-action-section---part-2)
-  - [Building the Call-To-Action Section - Part 3](#building-the-call-to-action-section---part-3)
-  - [Building the Footer - Part 1](#building-the-footer---part-1)
-  - [Building the Footer - Part 2](#building-the-footer---part-2)
+    - [Defining and Planning the Project (Steps 1 and 2)](#defining-and-planning-the-project-steps-1-and-2)
+      - [sections](#sections)
+    - [Sketching Initial Layout Ideas (Step 3)](#sketching-initial-layout-ideas-step-3)
+    - [First Design and Development Steps (Step 4)](#first-design-and-development-steps-step-4)
+    - [Responsive Design Principles](#responsive-design-principles)
+    - [How rem and max-width Work](#how-rem-and-max-width-work)
+      - [**output**](#output)
+    - [Building the Hero - Part 1](#building-the-hero---part-1)
+      - [html](#html)
+    - [Building the Hero - Part 2/3](#building-the-hero---part-23)
+    - [Building the Header](#building-the-header)
+    - [Building the Navigation](#building-the-navigation)
+      - [Markup Update](#markup-update)
+      - [adding style comments](#adding-style-comments)
+      - [Navigation](#navigation)
+      - [output](#output-1)
+    - [Setting Up a Reusable Grid](#setting-up-a-reusable-grid)
+      - [Markup Update](#markup-update-1)
+      - [adding style to HOW IT WORKS SECTION](#adding-style-to-how-it-works-section)
+      - [adding style to GENERAL REUSABLE COMPONENTS](#adding-style-to-general-reusable-components)
+    - [Building the How-It-Works Section - Part 1](#building-the-how-it-works-section---part-1)
+      - [Markup Update How-It-Works Section](#markup-update-how-it-works-section)
+      - [adding style to HOW IT WORKS SECTION](#adding-style-to-how-it-works-section-1)
+      - [output](#output-2)
+    - [Building the How-It-Works Section - Part 2](#building-the-how-it-works-section---part-2)
+      - [in this section we will add](#in-this-section-we-will-add)
+      - [heading-tertiary class](#heading-tertiary-class)
+      - [adding style to paragraph](#adding-style-to-paragraph)
+      - [output so far](#output-so-far)
+      - [let's style the image](#lets-style-the-image)
+    - [output so far](#output-so-far-1)
+      - [final output](#final-output)
+    - [Building the Featured-In Section](#building-the-featured-in-section)
+      - [adding html section](#adding-html-section)
+      - [adding css section](#adding-css-section)
+      - [output](#output-3)
+    - [Building the Meals Section - Part 1](#building-the-meals-section---part-1)
+      - [Adding html](#adding-html)
+      - [Adding styles](#adding-styles)
+      - [Output](#output-4)
+    - [Building the Meals Section - Part 2](#building-the-meals-section---part-2)
+      - [Adding HTML](#adding-html-1)
+      - [Adding styles](#adding-styles-1)
+      - [Output](#output-5)
+    - [Building the Meals Section - Part 3](#building-the-meals-section---part-3)
+      - [Adding Diet section](#adding-diet-section)
+      - [Adding styles](#adding-styles-2)
+      - [Output](#output-6)
+    - [Building the Testimonials Section - Part 1](#building-the-testimonials-section---part-1)
+      - [adding the testimonials section](#adding-the-testimonials-section)
+      - [adding styles](#adding-styles-3)
+      - [Output](#output-7)
+    - [Building the Testimonials Section - Part 2](#building-the-testimonials-section---part-2)
+      - [adding the gallery section](#adding-the-gallery-section)
+      - [adding styles](#adding-styles-4)
+      - [Output](#output-8)
+      - [Complete output](#complete-output)
+    - [Building the Pricing Section - Part 1](#building-the-pricing-section---part-1)
+      - [Adding pricing section](#adding-pricing-section)
+      - [adding styles](#adding-styles-5)
+      - [output](#output-9)
+    - [Building the Pricing Section - Part 2](#building-the-pricing-section---part-2)
+      - [Adding the new styles](#adding-the-new-styles)
+      - [adding the new markup for Features Part](#adding-the-new-markup-for-features-part)
+      - [output](#output-10)
+    - [Building the Features Part](#building-the-features-part)
+      - [adding the markup](#adding-the-markup)
+      - [adding the styles](#adding-the-styles)
+      - [output](#output-11)
+    - [Building the Call-To-Action Section - Part 1](#building-the-call-to-action-section---part-1)
+      - [adding the markup](#adding-the-markup-1)
+      - [adding the style](#adding-the-style)
+      - [output](#output-12)
+    - [Building the Call-To-Action Section - Part 2](#building-the-call-to-action-section---part-2)
+    - [Building the Call-To-Action Section - Part 3](#building-the-call-to-action-section---part-3)
+    - [Building the Footer - Part 1](#building-the-footer---part-1)
+    - [Building the Footer - Part 2](#building-the-footer---part-2)
 
 ## The 7 Steps to a Great Website
 
@@ -1362,21 +1412,808 @@ we can't add the psudo class to the image, so we need to add it to the container
 
 ### Building the Meals Section - Part 1
 
+#### Adding html
+
+```html
+<section class="section-meals">
+  <div class="container">
+    <span class="subheading">Meals</span>
+    <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
+  </div>
+  <div class="container grid grid--3-cols">
+    <div class="meal">
+      <img
+        class="meal-img"
+        src="img/meals/meal-1.jpg"
+        alt="JapJapanese Gyozasanyze "
+      />
+      <span class="tag">Vegetarian</span>
+      <p class="meal-title">Japanese Gyozas</p>
+      <ul class="meal-attributes">
+        <li class="meal-attribute">
+          <ion-icon name="flame-outline"></ion-icon>
+          <span> 650 Calories </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon name="restaurant-outline"></ion-icon>
+          <span> NutriScore &reg; 74 </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon name="star-outline"></ion-icon>
+          <span> 4.9 rating (571) </span>
+        </li>
+      </ul>
+    </div>
+    <div class="meal">Meal</div>
+    <div class="list">list of meal</div>
+  </div>
+</section>
+```
+
+#### Adding styles
+
+```CSS
+/* ************************************** */
+/* MEALS SECTION  */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attributes {
+  font-size: 1.8rem;
+}
+.meal-img {
+  width: 100%;
+}
+
+```
+
+#### Output
+
+![img](./images/30.png)
+
 ### Building the Meals Section - Part 2
+
+#### Adding HTML
+
+```html
+<div class="container grid grid--3-cols">
+  <div class="meal">
+    <img
+      class="meal-img"
+      src="img/meals/meal-1.jpg"
+      alt="JapJapanese Gyozasanyze "
+    />
+    <div class="meal-content">
+      <div class="meal-tags">
+        <span class="tag tag--vegetarian">Vegetarian</span>
+      </div>
+      <p class="meal-title">Japanese Gyozas</p>
+      <ul class="meal-attributes">
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+          <span> <strong>650</strong> Calories </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+          <span> NutriScore &reg; <strong>74</strong> </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+          <span> <strong>4.9</strong> rating (571) </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="meal">
+    <img class="meal-img" src="img/meals/meal-2.jpg" alt="Avocado Salad " />
+    <div class="meal-content">
+      <div class="meal-tags">
+        <span class="tag tag--vegan">Vegan</span>
+        <span class="tag tag--paleo">Paleo</span>
+      </div>
+      <p class="meal-title">Avocado Salad</p>
+      <ul class="meal-attributes">
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="flame-outline"></ion-icon>
+          <span> <strong>400</strong> Calories </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="restaurant-outline"></ion-icon>
+          <span> NutriScore &reg; <strong>92</strong> </span>
+        </li>
+        <li class="meal-attribute">
+          <ion-icon class="meal-icon" name="star-outline"></ion-icon>
+          <span> <strong>4.8</strong> rating (441) </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="list">list of meal</div>
+</div>
+```
+
+#### Adding styles
+
+```CSS
+/* ************************************** */
+/* MEALS SECTION  */
+.section-meals {
+  padding: 9.6rem 0;
+}
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.meal-img {
+  width: 100%;
+}
+.meal-content {
+  padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+}
+.meal-tags {
+  margin-bottom: 1.2rem;
+  display: flex;
+  gap: 0.4rem;
+}
+.tag {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background-color: #51cf66;
+  border-radius: 100px;
+  font-weight: 600;
+}
+.tag--vegetarian {
+  background-color: #51cf66;
+}
+.tag--vegan {
+  background-color: #94d82d;
+}
+.tag--paleo {
+  background-color: #ffd43b;
+}
+.meal-title {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 3.2rem;
+}
+
+.meal-attributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.meal-attribute {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.meal-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #e67e22;
+}
+
+strong {
+  font-weight: 500;
+}
+```
+
+#### Output
+
+![img](./images/31.png)
 
 ### Building the Meals Section - Part 3
 
+#### Adding Diet section
+
+```HTML
+<div class="diets">
+          <h3 class="heading-tertiary" >Works with any diet </h3>
+          <ul class="list">
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon>
+              <span>Vegetarian</span>
+            </li>
+
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Vegan</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Pescatarian</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Gluten-free</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Lactose-free</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Keto</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Paleo</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Low FODMAP</span>
+            </li>
+            <li class="list-item">
+              <ion-icon class="list-icon" name="checkmark-outline"></ion-icon><span>Kid-friendly</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container all-recipes">
+        <a href="#" class="link">See all recipes &rarr;</a>
+      </div>
+```
+
+#### Adding styles
+
+```CSS
+.meal {
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+  border-radius: 11px;
+  overflow: hidden;
+  transition: all 0.4s;
+}
+.meal:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: #e67e22;
+}
+
+.all-recipes {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.link:active,
+.link:link {
+  text-decoration: none;
+  display: inline-block;
+  color: #e67e22;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:visited {
+  color: #cf711f;
+  border-bottom: 1px solid transparent;
+}
+
+```
+
+#### Output
+
+![img](./images/32.png)
+
 ### Building the Testimonials Section - Part 1
+
+#### adding the testimonials section
+
+```HTML
+ < class="section-testimonials">
+      <div class="testimonials-container">
+        <span class="subheading">testimonials</span>
+        <h2 class="heading-secondary">
+         Once you try it, you can't go back!
+        </h2>
+        <div class="testimonials">
+
+          <figure class="testimonial">
+            <img class="testimonial-img" src="img/customers/customer-2.jpg" alt="photo of dave bryson">
+          <blockquote class="testimonial-text">
+            Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.
+          </blockquote>
+          <p class="testimonial-name">&mdash;Dave Bryson</p>
+        </figure>
+        <figure class="testimonial">
+          <img class="testimonial-img" src="img/customers/customer-4.jpg" alt="photo of Ben Hadley">
+          <blockquote class="testimonial-text">
+            The AI algorithm is crazy good, it chooses the right meals for me every time. It's amazing not to worry
+            about food anymore!.
+          </blockquote>
+          <p class="testimonial-name">&mdash;Ben Hadley</p>
+        </figure>
+        <figure class="testimonial">
+          <img class="testimonial-img" src="img/customers/customer-5.jpg" alt="photo of Steve Miller">
+          <blockquote class="testimonial-text">
+            Omnifood is a life saver! I just started a company, so there's no time for cooking. I couldn't live without
+            my daily meals now!
+          </blockquote>
+          <p class="testimonial-name">&mdash;Steve Miller</p>
+        </figure>
+        <figure class="testimonial">
+          <img class="testimonial-img" src="img/customers/customer-1.jpg" alt="photo of Hannah Smith">
+          <blockquote class="testimonial-text">
+            I got Omnifood for the whole family, and it frees up so much time! Plus, everything is organic and vegan and
+            without plastic.
+          </blockquote>
+          <p class="testimonial-name">&mdash;Hannah Smith</p>
+        </figure>
+      </div>
+    </div>
+```
+
+#### adding styles
+
+```CSS
+/* ************************************** */
+/* TESTIMONIALS SECTION */
+
+.section-testimonials {
+  background-color: #fdf2e9;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+}
+.testimonials-container {
+  padding: 9.6rem;
+}
+.testimonials {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 4.8rem;
+  column-gap: 6.4rem;
+}
+.testimonial-img {
+  width: 6.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+.testimonial-name {
+  font-size: 1.6rem;
+  color: #6f6f6f;
+}
+```
+
+#### Output
+
+![img](./images/33.png)
 
 ### Building the Testimonials Section - Part 2
 
+#### adding the gallery section
+
+```HTML
+ <div class="gallery">
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-1.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-2.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-3.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-4.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-5.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-6.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-7.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-8.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-9.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-10.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-11.jpg" alt="photo of beautifully arranged food">
+        </figure>
+        <figure class="gallery-item">
+          <img src="img/gallery/gallery-12.jpg" alt="photo of beautifully arranged food">
+        </figure>
+      </div>
+    </section>
+```
+
+#### adding styles
+
+```CSS
+- GRAYS:
+#6f6f6f(lightest gray allowed on #fdf2e9)
+#555
+#333
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.6rem;
+  padding: 1.6rem;
+  align-items: center;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+```
+
+#### Output
+
+![img](./images/34.png)
+
+#### Complete output
+
+![img](./images/35.png)
+
 ### Building the Pricing Section - Part 1
+
+#### Adding pricing section
+
+```html
+<section class="section-pricing">
+  <div class="container">
+    <span class="subheading">Pricing</span>
+    <h2 class="heading-secondary">Eating well without breaking the bank</h2>
+  </div>
+  <div class="container grid grid--2-cols">
+    <div class="pricing-plan">
+      <header class="plan-header">
+        <p class="plan-name">Starter</p>
+        <p class="plan-price"><span>$</span>399</p>
+        <p class="plan-text">per month. That's just $13 per meal!</p>
+      </header>
+      <ul class="list">
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>1 meal per day</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>Order times are between 11am and 9pm</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>Delivery is free</span>
+        </li>
+      </ul>
+      <div class="plan-sign-up">
+        <a class="btn btn--full" href="#">start eating well</a>
+      </div>
+    </div>
+    <div class="pricing-plan">
+      <header class="plan-header">
+        <p class="plan-name">Complete</p>
+        <p class="plan-price"><span>$</span>649</p>
+        <p class="plan-text">per month. That's just $11 per meal!</p>
+      </header>
+      <ul class="list">
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>2 meals per day</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>OOrder 24/7</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>Delivery is free</span>
+        </li>
+        <li class="list-item">
+          <ion-icon class="list-icon" name="checkmark-outline"></ion-icon
+          ><span>Get access to latest recipes</span>
+        </li>
+      </ul>
+      <div class="plan-sign-up">
+        <a class="btn btn--full" href="#">start eating well</a>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+#### adding styles
+
+```CSS
+/* move this to the common section */
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.list-icon {
+  height: 2.8rem;
+  width: 2.8rem;
+  color: #e67e22;
+}
+/* ************************************** */
+/* PRICING SECTION */
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+.pricing-plan {
+}
+
+.plan-name {
+  color: #cf711f;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.75;
+  margin-bottom: 3.2rem;
+}
+.plan-price {
+  font-size: 7.4rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: 0.8rem;
+}
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.plan-sign-up {
+  text-align: center;
+  margin-top: 4.8rem;
+}
+```
+
+#### output
+
+![img](./images/36.png)
 
 ### Building the Pricing Section - Part 2
 
+#### Adding the new styles
+
+```CSS
+.pricing-plan-starter {
+  justify-self: end;
+  padding: 4.6rem;
+  border: 2px solid #fdf2e9;
+}
+.pricing-plan {
+  border-radius: 11px;
+
+  width: 75%;
+}
+.pricing-plan-complete {
+  background-color: #fdf2e9;
+  padding: 4.8rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan-complete::after {
+  content: 'Best Value';
+  position: absolute;
+  top: 5%;
+  right: -8%;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: #ffd43b;
+  padding: 0.8rem 3.2rem;
+  transform: rotate(45deg);
+}
+```
+
+#### adding the new markup for Features Part
+
+```html
+<div class="container grid grid--4-cols">
+  <div class="feature">feature 1</div>
+  <div class="feature">feature 2</div>
+  <div class="feature">feature 3</div>
+  <div class="feature">feature 4</div>
+</div>
+```
+
+#### output
+
+![img](./images/37.png)
+
 ### Building the Features Part
 
+#### adding the markup
+
+```html
+ <div class="container grid">
+        <aside class="plan-details" >Prices include all applicable taxes. You can cancel at any time. Both plans include the following: </aside>
+      </div>
+      <div class="container grid grid--4-cols">
+        <div class="feature">
+          <ion-icon class="feature-icon" name="infinite-outline"></ion-icon>
+          <p class="feature-title">Never cook again !</p>
+          <p class="feature-text">Our subscriptions cover 365 days per year, even including major holidays.</p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="nutrition-outline"></ion-icon>
+          <p class="feature-title">Local and organic</p>
+          <p class="feature-text">Our cooks only use local, fresh, and organic products to prepare your meals.</p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="leaf-outline"></ion-icon>
+          <p class="feature-title">No waste</p>
+          <p class="feature-text">All our partners only use reusable containers to package all your meals.</p>
+        </div>
+        <div class="feature">
+          <ion-icon class="feature-icon" name="pause-outline"></ion-icon>
+          <p class="feature-title">Pause anytime</p>
+          <p class="feature-text">Going on vacation? Just pause your subscription, and we refund unused days.</p>
+        </div>
+
+      </div>
+    </section>
+```
+
+#### adding the styles
+
+```CSS
+.plan-details{
+  font-size: 1.6rem;
+  line-height: 1.6;
+  text-align: center;
+}
+.feature-icon {
+  color: #e67e22;
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-bottom: 3.2rem;
+  background-color: #fae5d3;
+  border-radius: 100px;
+  padding: 1.6rem;
+}
+.feature-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 1.6rem;
+}
+.feature-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+```
+
+#### output
+
+![img](./images/38.png)
+
 ### Building the Call-To-Action Section - Part 1
+
+#### adding the markup
+
+```html
+<section class="section-cta">
+  <div class="container">
+    <div class="cta">
+      <div class="cta-text-box">CTA</div>
+      <div
+        class="cta-img-box"
+        role="img"
+        aria-label="Woman enjoying food"
+      ></div>
+    </div>
+  </div>
+</section>
+```
+
+#### adding the style
+
+```css
+/* ************************************** */
+/* CTA SECTION */
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  /* background-color: #e67e22; */
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  height: 50rem;
+  overflow: hidden;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ), url(../img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+```
+
+#### output
+
+![img](./images/39.png)
 
 ### Building the Call-To-Action Section - Part 2
 
@@ -1386,10 +2223,6 @@ we can't add the psudo class to the image, so we need to add it to the container
 
 ### Building the Footer - Part 2
 
-![img](./images/26.png)
-![img](./images/27.png)
-![img](./images/28.png)
-![img](./images/29.png)
 ![img](./images/30.png)
 ![img](./images/31.png)
 ![img](./images/32.png)
@@ -1471,3 +2304,7 @@ we can't add the psudo class to the image, so we need to add it to the container
 ![img](./images/108.png)
 ![img](./images/109.png)
 ![img](./images/110.png)
+
+```
+
+```
