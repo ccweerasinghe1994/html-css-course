@@ -99,6 +99,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid-center-v {
   align-items: center;
 }
@@ -235,5 +239,5 @@ strong {
 
 *:focus {
   outline: none;
-  box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5    );
+  box-shadow: 0 0 0 8px rgba(230, 125, 34, 0.5);
 }

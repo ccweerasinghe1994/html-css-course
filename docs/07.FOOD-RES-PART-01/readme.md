@@ -80,6 +80,8 @@
       - [adding styles](#adding-styles-6)
       - [output](#output-13)
     - [Building the Footer - Part 1](#building-the-footer---part-1)
+      - [Adding the markup](#adding-the-markup-2)
+      - [output](#output-14)
     - [Building the Footer - Part 2](#building-the-footer---part-2)
 
 ## The 7 Steps to a Great Website
@@ -2331,90 +2333,87 @@ strong {
 
 ### Building the Footer - Part 1
 
+#### Adding the markup
+
+```html
+<footer class="footer">
+  <div class="container grid grid--5-cols">
+    <div class="logo-col">
+      <a href="#" class="footer-logo">
+        <img
+          class="logo"
+          src="./img/omnifood-logo.png"
+          alt="omniFood logo"
+          srcset=""
+        />
+      </a>
+      <ul class="social-links">
+        <li>
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <p class="copyright">
+        Copyright &copy; By Ominifood Inc. All rights reserved
+      </p>
+    </div>
+    <div class="address-col">
+      <p class="footer-heading">Contact Us</p>
+      <address class="contacts">
+        <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+        <p>
+          <a href="tel:+415-201-6370">415-201-6370</a>
+          <a href="mailto:hello@omnifood.com">hello@omnifood.com</a>
+        </p>
+      </address>
+    </div>
+    <nav class="nav-col">
+      <p class="footer-heading">Account</p>
+      <ul class="footer-nav">
+        <li><a href="#">Create account</a></li>
+        <li><a href="#">Sign in</a></li>
+        <li><a href="#">iOS app</a></li>
+        <li><a href="#">Android app</a></li>
+      </ul>
+    </nav>
+    <nav class="nav-col">
+      <p class="footer-heading">Company</p>
+      <ul class="footer-nav">
+        <li><a href="#">About Omnifood </a></li>
+        <li><a href="#">For Business</a></li>
+        <li><a href="#">Cooking partners</a></li>
+        <li><a href="#">Careers</a></li>
+      </ul>
+    </nav>
+    <nav class="nav-col">
+      <p class="footer-heading">Resources</p>
+      <ul class="footer-nav">
+        <li><a href="#">Careers </a></li>
+        <li><a href="#">Recipe directory</a></li>
+        <li><a href="#">Help center</a></li>
+        <li><a href="#">Privacy & terms</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+```
+
+#### output
+
+![img](./images/41.png)
+
 ### Building the Footer - Part 2
 
-![img](./images/30.png)
-![img](./images/31.png)
-![img](./images/32.png)
-![img](./images/33.png)
-![img](./images/34.png)
-![img](./images/35.png)
-![img](./images/36.png)
-![img](./images/37.png)
-![img](./images/38.png)
-![img](./images/39.png)
-![img](./images/40.png)
-![img](./images/41.png)
-![img](./images/42.png)
 ![img](./images/43.png)
 ![img](./images/44.png)
-![img](./images/45.png)
-![img](./images/46.png)
-![img](./images/47.png)
-![img](./images/48.png)
-![img](./images/49.png)
-![img](./images/50.png)
-![img](./images/51.png)
-![img](./images/52.png)
-![img](./images/53.png)
-![img](./images/54.png)
-![img](./images/55.png)
-![img](./images/56.png)
-![img](./images/57.png)
-![img](./images/58.png)
-![img](./images/59.png)
-![img](./images/60.png)
-![img](./images/61.png)
-![img](./images/62.png)
-![img](./images/63.png)
-![img](./images/64.png)
-![img](./images/65.png)
-![img](./images/66.png)
-![img](./images/67.png)
-![img](./images/68.png)
-![img](./images/69.png)
-![img](./images/70.png)
-![img](./images/71.png)
-![img](./images/72.png)
-![img](./images/73.png)
-![img](./images/74.png)
-![img](./images/75.png)
-![img](./images/76.png)
-![img](./images/77.png)
-![img](./images/78.png)
-![img](./images/79.png)
-![img](./images/80.png)
-![img](./images/81.png)
-![img](./images/82.png)
-![img](./images/83.png)
-![img](./images/84.png)
-![img](./images/85.png)
-![img](./images/86.png)
-![img](./images/87.png)
-![img](./images/88.png)
-![img](./images/89.png)
-![img](./images/90.png)
-![img](./images/91.png)
-![img](./images/92.png)
-![img](./images/93.png)
-![img](./images/94.png)
-![img](./images/95.png)
-![img](./images/96.png)
-![img](./images/97.png)
-![img](./images/98.png)
-![img](./images/99.png)
-![img](./images/100.png)
-![img](./images/101.png)
-![img](./images/102.png)
-![img](./images/103.png)
-![img](./images/104.png)
-![img](./images/105.png)
-![img](./images/106.png)
-![img](./images/107.png)
-![img](./images/108.png)
-![img](./images/109.png)
-![img](./images/110.png)
-
-```
-
-```
