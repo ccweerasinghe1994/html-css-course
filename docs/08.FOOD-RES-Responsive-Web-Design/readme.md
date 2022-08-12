@@ -47,6 +47,8 @@
 
 ## How to Select Breakpoints
 
+![image](images/4.png)
+
 ## Responding to Small Laptops
 
 ## Responding to Landscape Tablets
