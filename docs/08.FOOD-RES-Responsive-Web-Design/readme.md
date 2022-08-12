@@ -9,6 +9,7 @@
     - [adding queries.css file](#adding-queriescss-file)
     - [Adding media queries](#adding-media-queries)
   - [Responding to Tablets](#responding-to-tablets)
+    - [Adding media queries for tablets](#adding-media-queries-for-tablets)
   - [Building the Mobile Navigation](#building-the-mobile-navigation)
   - [Responding to Smaller Tablets](#responding-to-smaller-tablets)
   - [Responding to Phones](#responding-to-phones)
@@ -144,8 +145,87 @@ and add this to the stye file
 
 ## Responding to Tablets
 
+### Adding media queries for tablets
+
+```css
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  line-height: 1.2;
+}
+
+/* ***************************************** */
+/* BELOW 940 px (tablets) */
+
+@media (max-width: 59em) {
+  html {
+    /* 8/16*100 */
+    font-size: 50%;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8 rem;
+    gap: 6.4rem;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+  .delivered-meals {
+    justify-content: center;
+    margin-top: 3.2rem;
+  }
+  .logos img {
+    height: 2.4rem;
+  }
+
+  .step-number {
+    font-size: 7.4rem;
+  }
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+  .btn--form {
+    margin-top: 1.2rem;
+  }
+}
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* --- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ 
+*/
+```
+
 ## Building the Mobile Navigation
 
 ## Responding to Smaller Tablets
 
 ## Responding to Phones
+
+```
+
+```
