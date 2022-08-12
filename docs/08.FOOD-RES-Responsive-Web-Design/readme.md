@@ -11,7 +11,10 @@
   - [Responding to Tablets](#responding-to-tablets)
     - [Adding media queries for tablets](#adding-media-queries-for-tablets)
   - [Building the Mobile Navigation](#building-the-mobile-navigation)
+    - [Adding the markup](#adding-the-markup)
+    - [Adding the styles](#adding-the-styles)
   - [Responding to Smaller Tablets](#responding-to-smaller-tablets)
+    - [Adding the styles](#adding-the-styles-1)
   - [Responding to Phones](#responding-to-phones)
 
 ## How Media Queries Work
@@ -222,9 +225,172 @@ and add this to the stye file
 
 ## Building the Mobile Navigation
 
+### Adding the markup
+
+```html
+<header class="header nav-open">
+  <a href="#">
+    <img class="logo" alt="Omnifood logo" src="img/omnifood-logo.png" />
+  </a>
+  <nav class="main-nav">
+    <ul class="main-nav-list">
+      <li><a class="main-nav-link" href="#">How it works</a></li>
+      <li><a class="main-nav-link" href="#">Meals</a></li>
+      <li><a class="main-nav-link" href="#">Testimonials</a></li>
+      <li><a class="main-nav-link" href="#">Pricing</a></li>
+      <li><a class="main-nav-link nav-cta" href="#">Try for free</a></li>
+    </ul>
+  </nav>
+  <button class="btn-mobile-nav">
+    <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+    <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+  </button>
+</header>
+```
+
+### Adding the styles
+
+```css
+body {
+  font-family: 'Rubik', sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  position: relative;
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name='close-outline'] {
+  display: none;
+}
+
+@media (max-width: 59em) {
+  .btn-mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+    /* hide the navigation */
+    /* display: none; */
+    /* allows no transitions */
+    opacity: 0;
+    /* make it inaccessible to mouse and keyboard */
+    pointer-events: none;
+    /* hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3.6rem;
+  }
+}
+/* 
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* --- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+ 
+*/
+```
+
 ## Responding to Smaller Tablets
 
+### Adding the styles
+
+```css
+/* ***************************************** */
+/* BELOW 704 px (smaller tablets) */
+@media (max-width: 44em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .diets {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+  .heading-secondary {
+    margin-bottom: 4.6rem;
+  }
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6fr);
+  }
+  .logo-col,
+  .address-col {
+    grid-row: 2;
+    grid-column: span 3;
+  }
+  .nav-col {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 2.6rem;
+  }
+}
+```
+
 ## Responding to Phones
+
+```
+
+```
 
 ```
 
