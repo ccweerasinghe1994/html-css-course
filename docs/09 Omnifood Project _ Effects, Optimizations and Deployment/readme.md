@@ -116,12 +116,114 @@ obs.observe(heroEl);
 
 ## Browser Support and Fixing Flexbox Gap in Safari
 
+```css
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.507);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+```
+
+```js
+///////////////////////////////////////////////////////////
+// Fixing flexbox gap property missing in some Safari versions
+function checkFlexGap() {
+  var flex = document.createElement('div');
+  flex.style.display = 'flex';
+  flex.style.flexDirection = 'column';
+  flex.style.rowGap = '1px';
+
+  flex.appendChild(document.createElement('div'));
+  flex.appendChild(document.createElement('div'));
+
+  document.body.appendChild(flex);
+  var isSupported = flex.scrollHeight === 1;
+  flex.parentNode.removeChild(flex);
+
+  if (!isSupported) document.body.classList.add('no-flexbox-gap');
+}
+checkFlexGap();
+```
+
 ## Testing Performance With Lighthouse
+
+use the built in chrome dev tools to fix the issues
 
 ## Adding Favicon and Meta Description
 
-## Image Optimizations
+generate the favicons using this [link](https://www.favicon-generator.org/) and add to the folders
 
-## Deployment to Netlify
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta
+  name="description"
+  content="
+    Omnifood is a AI powered food subscription service. that will make eat healthy again, 365 per year. It's 
+    Tailored tp our personal tastes and nutritional needs.
+    "
+/>
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png" />
+<link
+  rel="apple-touch-icon"
+  sizes="114x114"
+  href="./img/favicon/apple-icon-114x114.png"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="120x120"
+  href="./img/favicon/apple-icon-120x120.png"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="144x144"
+  href="./img/favicon/apple-icon-144x144.png"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="152x152"
+  href="./img/favicon/apple-icon-152x152.png"
+/>
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="./img/favicon/apple-icon-180x180.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="192x192"
+  href="./img/favicon/android-icon-192x192.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="./img/favicon/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="96x96"
+  href="./img/favicon/favicon-96x96.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="./img/favicon/favicon-16x16.png"
+/>
+<link rel="manifest" href="./img/favicon/manifest.json" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+<meta name="theme-color" content="#ffffff" />
+```
 
-## Making the Form Work With Netlify Forms
+## Image Optimizations ## Deployment to Netlify ## Making the Form Work With
+
+Netlify Forms
+
+```
+
+```
