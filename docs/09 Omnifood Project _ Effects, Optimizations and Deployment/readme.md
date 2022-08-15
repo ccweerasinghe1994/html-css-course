@@ -40,6 +40,80 @@ btnNavEl.addEventListener('click', function () {
 
 ## Implementing a Sticky Navigation Bar
 
+### Adding the styles
+
+```css
+.sticky .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 1.2rem 3.6rem rgba(0, 0, 0, 0.03);
+  z-index: 10000;
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+```
+
+### Adding the script
+
+```js
+// Smooth Scrolling animation
+
+const allLinks = document.querySelectorAll('a:link');
+
+allLinks.forEach(function (link) {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
+    const target = this.getAttribute('href');
+
+    if (target === '#') {
+      window.scroll({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+
+    if (target !== '#' && target.startsWith('#')) {
+      const sectionEl = document.querySelector(target);
+      sectionEl.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    if (link.classList.contains('main-nav-link')) {
+      headerEl.classList.toggle('nav-open');
+    }
+  });
+});
+
+const heroEl = document.querySelector('.section-hero');
+// Sticky Navigation
+const obs = new IntersectionObserver(
+  function (entries) {
+    const ent = entries[0];
+    if (!ent?.isIntersecting) {
+      document.body.classList.add('sticky');
+    }
+    if (ent?.isIntersecting) {
+      document.body.classList.remove('sticky');
+    }
+  },
+  {
+    // In the viewPort
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px',
+  }
+);
+
+obs.observe(heroEl);
+```
+
 ## Browser Support and Fixing Flexbox Gap in Safari
 
 ## Testing Performance With Lighthouse
